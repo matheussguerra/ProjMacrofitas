@@ -6,7 +6,7 @@
 ### Controle de Versão
 |Versão | Data | Autor | Notas da Revisão |
 |--- | --- | --- | --- |
-| `  |     |     |     |
+|    |     |     |     |
 
 **Sumário**
 1. [Objetivos deste documento](#id1)
