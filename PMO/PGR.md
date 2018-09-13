@@ -9,7 +9,7 @@
 ## Sumário
 
 1. [Utilização do Repositório](#desc)
-2. [Atualização e Manutenção dos Requisitos](#req)
+2. [Atualização de Requisitos](#req)
 3. [Declaração de Escopo](#escopo)
 4. [Estrutura Analítica do Projeto (EAP)](#eap)
 
