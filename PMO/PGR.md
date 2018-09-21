@@ -41,4 +41,4 @@ A equipe de desenvolvimento utilizará a ferramenta Trello para controlar as "is
 
 ## Estrutura Analítica do Projeto (EAP)
 
-
+![picture](eap.png)
