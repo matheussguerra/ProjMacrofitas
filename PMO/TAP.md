@@ -84,11 +84,12 @@ O sucesso do projeto será atingido quando os objetivos forem alcançados, ou se
 ### 10. Stakeholders
 <div id='id10' />
 Tabela de pessoas envolvidas diretamente com a evolução do projeto.
-| Nome         | Instituição |
-|--------------|-------------|
-| Lucas Guedes       | UTFPR-CM         |
-| Matheus Guerra      | UTFPR-CM         |
-| Rafael Ramos   | UTFPR-CM         |
-| Vitor Shinohara       | UTFPR-CM         |
-| Reginaldo Ré | UTFPR-CM       |
+
+ Nome             | Instituição      
+------------------|------------------
+ Lucas Guedes     | UTFPR-CM         
+ Matheus Guerra   | UTFPR-CM         
+ Rafael Ramos     | UTFPR-CM         
+ Vitor Shinohara  | UTFPR-CM         
+ Reginaldo Ré     | UTFPR-CM         
 
