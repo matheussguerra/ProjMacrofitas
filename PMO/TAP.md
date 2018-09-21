@@ -19,6 +19,7 @@
 8. [Cronograma de entregas](#id8)
 9. [Requisitos para aprovação/aceitação do projeto](#id9)
 10. [Requisitos para aprovação/aceitação do projeto](#id10)
+11. [Gerente de projeto](#id11)
 
 
 
@@ -93,3 +94,7 @@ Tabela de pessoas envolvidas diretamente com a evolução do projeto.
  Vitor Shinohara  | UTFPR-CM         
  Reginaldo Ré     | UTFPR-CM         
 
+### 11. Gerente de projeto
+<div id='id11' />
+
+O gerente de projeto será Vitor Yudi Shinohara.
