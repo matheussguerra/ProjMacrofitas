@@ -42,4 +42,32 @@ Durante o projeto novos requisitos podem ser adicionados com a devida aprovaçã
 ## Estrutura Analítica do Projeto (EAP)
 <div id='eap' />
 
-![picture](eap.png)
+1. Entrega
+   * PMO
+      * TAP
+      * PGR
+2. Entrega
+   * Validação de Espécies
+      * Pré processamento de dados da base cedida
+      * Verificação da lista de nomes de espécies e autores
+      * Extração de dados das online databases (Flora do Brasil e PlantList)
+         * Estruturação dos dados das online databases
+      * Verificar/modificar nomes na base cedida com os nomes dos dados estruturados
+   * Elaborar testes unitários
+   * Aplicar testes unitários
+3. Entrega
+   * Busca de Ocorrências de espécies
+      * Extração de dados das online databases (GBIF e Specieslink)
+   * Triagem dos dados
+      * Correção de nomes inválidos
+      * Correção de incoerências
+   * Elaborar testes unitários
+   * Aplicar testes unitários
+4. Entrega
+   * Saidas
+      * Gráficos
+      * Mapas
+      * Tabela
+   * Elaborar testes unitários
+   * Aplicar testes unitários
+   * Termo de Finalização de projeto
