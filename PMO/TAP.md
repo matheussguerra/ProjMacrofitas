@@ -7,6 +7,7 @@
 |Versão | Data | Autor | Notas da Revisão |
 |--- | --- | --- | --- |
 |  1.0  |  13/08/2018   | Lucas, Matheus, Rafael e Vitor    |  Primeira versão do TAP   |
+|  1.1  |  27/0/2018    | Matheus                           | Correção das datas de releases |
 
 **Sumário**
 1. [Objetivos deste documento](#id1)
