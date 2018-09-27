@@ -51,7 +51,7 @@ Durante o projeto novos requisitos podem ser adicionados com a devida aprovaçã
       * Pré processamento de dados da base cedida
       * Verificação da lista de nomes de espécies e autores
       * Extração de dados das online databases (Flora do Brasil e PlantList)
-         * Estruturação dos dados das online databases
+      * Estruturação dos dados das online databases
       * Verificar/modificar nomes na base cedida com os nomes dos dados estruturados
    * Elaborar testes unitários
    * Aplicar testes unitários
