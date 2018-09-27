@@ -5,6 +5,7 @@
 | Versão |    Data    |            Autores            |   Notas da Revisão    |
 | :----: | :--------: | :---------------------------: | :-------------------: |
 | 0.0.1  | 13/09/2018 | Lucas Guedes, Matheus Guerra, Rafael Alessandro, Vítor Yudi | Criação do PGR |
+| 0.1.0  |27/09/2018  | Lucas, Rafael                                      | Correção do EAP|
 
 ## Sumário
 
