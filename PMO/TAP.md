@@ -75,6 +75,7 @@ Este projeto terá 3 entregas programadas conforme descrito na tabela a seguir:
 Release 01                   | 21/09/2018        
 Release 02                   | 28/09/2018        
 Release 03                   | 19/10/2018
+Release 04                   | 06/12/2018
 
 
 ### 9. Requisitos para aprovação/aceitação do projeto
