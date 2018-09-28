@@ -6,6 +6,7 @@
 | :----: | :--------: | :---------------------------: | :-------------------: |
 | 0.0.1  | 13/09/2018 | Lucas Guedes, Matheus Guerra, Rafael Alessandro, Vítor Yudi | Criação do PGR |
 | 0.1.0  |27/09/2018  | Lucas, Rafael                                      | Correção do EAP|
+| 0.1.1  |28/09/2018  | Matheus                                      | Seqência de tarefas|
 
 ## Sumário
 
@@ -13,6 +14,7 @@
 2. [Atualização de Requisitos](#req)
 3. [Declaração de Escopo](#escopo)
 4. [Estrutura Analítica do Projeto (EAP)](#eap)
+5. [Sequenciamento de Tarefas](#seq)
 
 <div id='desc' />
 
@@ -72,3 +74,9 @@ Durante o projeto novos requisitos podem ser adicionados com a devida aprovaçã
    * Elaborar testes unitários
    * Aplicar testes unitários
    * Termo de Finalização de projeto
+   
+   
+## Sequenciamento de Tarefas
+<div id='seq' />
+
+<p>O sequenciamento de tarefas é apresentado atráves do gerenciador de projetos Waffle. O projeto pode ser acessado através do link: https://waffle.io/GuerraUTFPR/ProjEng2 </p>.
