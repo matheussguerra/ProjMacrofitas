@@ -13,7 +13,7 @@ def main():
 
 	for linha in ref_arquivo.readlines():
 		especie = linha.split()
-		result_arquivo.writelines(especie[0][1:] + " " + especie[1] + "\n")
+		result_arquivo.writelines(especie[0][0:] + " " + especie[1] + "\n")
 		print(especie[0][1:] + " " + especie[1])
 
 	ref_arquivo.close()
