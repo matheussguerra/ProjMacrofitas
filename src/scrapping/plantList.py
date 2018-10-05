@@ -1,8 +1,9 @@
 from BeautifulSoup import BeautifulSoup
 import requests
 
-def plantList():
-    response = requests.get('http://www.theplantlist.org/tpl1.1/search?q=Eclipta megapotamica')
+def getData(searchTerm):
+    response = requests.get('http://www.theplantlist.org/tpl1.1/search?q=' + searchTerm)
+    raw_http = response.text
 
     if response.ok:
         raw_http = response.text
@@ -11,6 +12,7 @@ def plantList():
         isAccepted = verifyAccepted(soup)
         synonymous = getSynonymous(soup)
         
+        #print isAccepted, synonymous
         return isAccepted, synonymous
     else:
         return 'Bad Response!'
@@ -20,6 +22,11 @@ def verifyAccepted(soup):
     return True if 'accepted' in header_text.text else False
 
 def getSynonymous(soup):
+    title = str(soup('title')[0])
+    
+    if(title[7:17] == "No results"):
+        return False
+
     table = soup('table')
     trs = table[0]('tr')
     synonymous = []
@@ -33,10 +40,4 @@ def getSynonymous(soup):
             'date_supplied' : str(tr('td')[4].text)
         }
         synonymous.append(data)
-    return data
-
-def main():
-    plantList()
-
-if __name__ == '__main__':
-    main()
+    return synonymous
