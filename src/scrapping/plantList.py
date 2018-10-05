@@ -3,12 +3,17 @@ import requests
 
 def plantList():
     response = requests.get('http://www.theplantlist.org/tpl1.1/search?q=Eclipta megapotamica')
-    raw_http = response.text
 
-    soup = BeautifulSoup(raw_http)
+    if response.ok:
+        raw_http = response.text
+        soup = BeautifulSoup(raw_http)
 
-    isAccepted = verifyAccepted(soup)
-    synonymous = getSynonymous(soup)
+        isAccepted = verifyAccepted(soup)
+        synonymous = getSynonymous(soup)
+        
+        return isAccepted, synonymous
+    else:
+        return 'Bad Response!'
 
 def verifyAccepted(soup):
     header_text = soup('p')[0]
