@@ -39,6 +39,7 @@ def getManyEntries(urlRequestTemplate, inputFile,outputPath, notFoundPath):
 			response = requests.get(urlRequest.strip())
 
 			unicode_queryResult = response.json()[u'result']
+
 			if(unicode_queryResult == None):
 				parseAndWriteJSON(line, notFoundPath, isNone=True)
 				continue
@@ -57,23 +58,30 @@ def parseAndWriteJSON(json_data, outputPath, isNone=False):
 	json_data = json.loads(json_data)[0]
 	status = json_data["taxonomicstatus"]
 
-	family_synonymous, genus_synonymous, status_synonymous = '', '', ''
+	family_synonymous, name_synonymous = '', ''
 
-	if json_data.has_key('NOME ACEITO'):
-		print 'entrou'
-		planta_aceita = json_data["NOME ACEITO"][0]
-		family  = planta_aceita["family"]
-		genus = planta_aceita["genus"]
-		status = planta_aceita["taxonomicstatus"]
 
-		family_synonymous = json_data["family"]
-		genus_synonymous = json_data["genus"]
-		status_synonymous = json_data["taxonomicstatus"]
+	if status == 'SINONIMO':
+		try:
+			family = json_data['acceptednameusage'].split()[0]
+			name = json_data['acceptednameusage'].split()[1]
+		except:
+			family = 'Not specified'
+			name = 'Not Specified'
+
+		family_synonymous = json_data["scientificname"].split()[0]
+		name_synonymous = json_data["scientificname"].split()[1]
 
 
 	else:
 		family = json_data["family"]
-		genus = json_data["genus"]
+		name = json_data["scientificname"].split()[1]
 		status = json_data["taxonomicstatus"]
 
-	output.writerow((family,genus,status, family_synonymous, genus_synonymous, status_synonymous))
+	output.writerow((family,name,status, family_synonymous, name_synonymous))
+
+def main():
+	getData(allDataset=True)
+
+if __name__ == '__main__':
+	main()
