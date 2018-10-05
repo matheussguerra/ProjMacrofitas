@@ -1,8 +1,8 @@
 from BeautifulSoup import BeautifulSoup
 import requests
 
-def plantList():
-    response = requests.get('http://www.theplantlist.org/tpl1.1/search?q=Eclipta megapotamica')
+def getData(searchTerm):
+    response = requests.get('http://www.theplantlist.org/tpl1.1/search?q=' + searchTerm)
     raw_http = response.text
 
     soup = BeautifulSoup(raw_http)
@@ -28,10 +28,4 @@ def getSynonymous(soup):
             'date_supplied' : str(tr('td')[4].text)
         }
         synonymous.append(data)
-    return data
-
-def main():
-    plantList()
-
-if __name__ == '__main__':
-    main()
+    return synonymous
