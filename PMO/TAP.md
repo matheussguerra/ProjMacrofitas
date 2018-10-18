@@ -8,6 +8,7 @@
 |--- | --- | --- | --- |
 |  1.0  |  13/08/2018   | Lucas, Matheus, Rafael e Vitor    |  Primeira versão do TAP   |
 |  1.1  |  27/09/2018    | Matheus                           | Correção das datas de releases |
+|  1.2  |  18/10/2018    | Matheus                           | Correção das datas de releases |
 
 **Sumário**
 1. [Objetivos deste documento](#id1)
@@ -75,7 +76,7 @@ Este projeto terá 3 entregas programadas conforme descrito na tabela a seguir:
 -----------------------------|-------------------
 Release 01                   | 21/09/2018        
 Release 02                   | 28/09/2018        
-Release 03                   | 19/10/2018
+Release 03                   | 02/11/2018
 Release 04                   | 06/12/2018
 
 
