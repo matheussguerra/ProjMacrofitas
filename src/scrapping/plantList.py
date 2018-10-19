@@ -36,19 +36,22 @@ def getAllEntries(inputPath='../data/ListaMacrofitasResult.csv', outputPath='../
                 isAccepted = verifyAccepted(soup)
                 synonymous = getSynonymous(soup)
 
-                status = 'Accepted' if isAccepted else 'Sinonimo'
+                status = 'NOME_ACEITO' if isAccepted else 'SINONIMO'
 
                 if not synonymous:
                     with open(notFoundPath, 'a') as notFound:
                         notFound.write('{} not found.\n'.format(line.replace('\n', '')))
                         continue
 
-                output.writerow((line.replace('\n', ''),status, synonymous[0]['genus'], synonymous[0]['species'],synonymous[0]['status']))
+                output.writerow((line.replace('\n', ''),status, synonymous[0]['genus'] + ' ' + synonymous[0]['species'],synonymous[0]['status']))
 
 
 def verifyAccepted(soup):
-    header_text = soup('p')[0]
-    return True if 'accepted' in header_text.text else False
+    firstTableRow = soup('tbody')[0]
+    firstRow = firstTableRow('tr')[0]
+    print firstRow.text
+    print '--------------------------------------------------'
+    return True if 'Accepted' in firstRow.text else False
 
 def getSynonymous(soup):
     title = str(soup('title')[0])

@@ -63,22 +63,19 @@ def parseAndWriteJSON(json_data, outputPath, isNone=False):
 
 	if status == 'SINONIMO':
 		try:
-			family = json_data['acceptednameusage'].split()[0]
-			name = json_data['acceptednameusage'].split()[1]
+			name = json_data["scientificname"].split()[0] + ' ' + json_data["scientificname"].split()[1]
 		except:
 			family = 'Not specified'
 			name = 'Not Specified'
 
-		family_synonymous = json_data["scientificname"].split()[0]
-		name_synonymous = json_data["scientificname"].split()[1]
+		name_synonymous = json_data["scientificname"].split()[0] + ' ' + json_data["scientificname"].split()[1]
 
 
 	else:
-		family = json_data["family"]
-		name = json_data["scientificname"].split()[1]
+		name = json_data["scientificname"].split()[0] + ' ' + json_data["scientificname"].split()[1]
 		status = json_data["taxonomicstatus"]
 
-	output.writerow((family,name,status, family_synonymous, name_synonymous))
+	output.writerow((name, status, name_synonymous))
 
 def main():
 	getData(allDataset=True)
