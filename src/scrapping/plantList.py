@@ -47,11 +47,15 @@ def getAllEntries(inputPath='../data/ListaMacrofitasResult.csv', outputPath='../
 
 
 def verifyAccepted(soup):
-    firstTableRow = soup('tbody')[0]
-    firstRow = firstTableRow('tr')[0]
-    print firstRow.text
-    print '--------------------------------------------------'
-    return True if 'Accepted' in firstRow.text else False
+    try:
+        firstTableRow = soup('tbody')[0]
+        firstRow = firstTableRow('tr')[0]
+        print e
+        print firstRow.text
+        print '--------------------------------------------------'
+        return True if 'Accepted' in firstRow.text else False
+    except Exception as e:
+        print e
 
 def getSynonymous(soup):
     title = str(soup('title')[0])
