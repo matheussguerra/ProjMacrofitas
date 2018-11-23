@@ -58,7 +58,7 @@ def parseAndWriteJSON(json_data, outputPath, isNone=False):
 	json_data = json.loads(json_data)[0]
 	status = json_data["taxonomicstatus"]
 
-	family_synonymous, name_synonymous = '', ''
+	name, accepted_name = '', ''
 
 
 	if status == 'SINONIMO':
@@ -67,15 +67,17 @@ def parseAndWriteJSON(json_data, outputPath, isNone=False):
 		except:
 			family = 'Not specified'
 			name = 'Not Specified'
-
-		name_synonymous = json_data["scientificname"].split()[0] + ' ' + json_data["scientificname"].split()[1]
-
+		try:
+			accepted_name = json_data["NOME ACEITO"][0]["scientificname"].split()[0] + ' ' + json_data["NOME ACEITO"][0]["scientificname"].split()[1]
+		except:
+			accepted_name = "Not Specified"
+			pass
 
 	else:
 		name = json_data["scientificname"].split()[0] + ' ' + json_data["scientificname"].split()[1]
 		status = json_data["taxonomicstatus"]
 
-	output.writerow((name, status, name_synonymous))
+	output.writerow((name, status, accepted_name))
 
 def main():
 	getData(allDataset=True)
