@@ -10,11 +10,6 @@ def getLocation(sciName):
         name_splited = result['scientificName'].encode('utf8').split()
         scientificName = "{} {}".format(name_splited[0], name_splited[1])
         if scientificName == sciName:
-
-            try:
-                locality =  result['locality'].encode('utf8')
-            except:
-                locality = ''
             try:
                 municipality =  result['municipality'].encode('utf8')
             except:
@@ -41,7 +36,7 @@ def getLocation(sciName):
             except:
                 date = ''
 
-        writeOutput('{},{},{},{},{},{},{},{}'.format(scientificName, locality, municipality, state, country, latitude, longitude, date))
+        writeOutput('{},{},{},{},{},{},{}'.format(scientificName, municipality, state, country, latitude, longitude, date))
 
 
 def writeOutput(line):
@@ -57,13 +52,12 @@ if __name__ == '__main__':
     errors = open('../data/errors.csv', 'a')
     lines = input.readlines()
 
-#   getLocation('Dicliptera ciliaris')
     for line in lines:
         try:
             if line.split(',')[1] == 'ok':
                 getLocation(line.split(',')[0].replace('\n',''))
             else:
-                print line.split(',')[0]
                 getLocation(line.split(',')[0].replace('\n',''))
+            print line.split(',')[0].replace('\n','')
         except:
             errors.write(line)
