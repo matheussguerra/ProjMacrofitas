@@ -36,50 +36,73 @@ def getFilesContent(path):
     #    raise Exception('Arquivo não encontrado: {}'.format(path))
     #    return None
 
-def readAllFiles(floraDoBrasilPath="../data/floraDoBrasil.csv", plantListPath="../data/plantList.csv", speciesLinkPath="../data/speciesLink.csv", gbifPath="../data/gbifLocations.csv"):
+def readAllFiles(inputPath="../data/ListaMacrofitasResult.csv",floraDoBrasilPath="../data/floraDoBrasil.csv", plantListPath="../data/plantList.csv", speciesLinkPath="../data/speciesLink.csv", gbifPath="../data/gbifLocations.csv"):
     # Inicializa variáveis
     floraDoBrasilContent, plantListContent, speciesLinkContent, gbifContent = None, None, None, None
-
+    inputContent = getFilesContent(inputPath)
     floraDoBrasilContent = getFilesContent(floraDoBrasilPath)
     plantListContent = getFilesContent(plantListPath)
 
-    generateFirstTable(floraDoBrasilContent, plantListContent, '../../output/Tabela1.csv')
-    generateSecondTable(floraDoBrasilContent, plantListContent, '../../output/Tabela2.csv')
+    generateFirstTable(inputContent, floraDoBrasilContent, plantListContent, '../../output/Tabela1.csv')
 
-    #speciesLinkContent = getFilesContent(speciesLinkPath)
+    generateSecondTable(floraDoBrasilContent, plantListContent, '../../output/Tabela2.csv')
+    speciesLinkContent = getFilesContent(speciesLinkPath)
     secondTableContent = getFilesContent('../../output/Tabela2.csv')
     gbifContent = getFilesContent(gbifPath)
     speciesLinkContent = getFilesContent(speciesLinkPath)
-
     generateFourthTable(secondTableContent, gbifContent, speciesLinkContent, '../../output/Tabela4.csv')
 
 
-def generateFirstTable(floraDoBrasilContent, plantListContent, firstTableOutputPath):
+def generateFirstTable(inputContent, floraDoBrasilContent, plantListContent, firstTableOutputPath):
     # Adiciona o cabeçalho do csv no arquivo de saída
+    writeOutput(firstTableOutputPath, 'w', ['Nome','Status Flora do Brasil', 'Nome Aceito Flora do Brasil', 'Status PlantList', 'Nome Aceito PlantList', 'Plant List x Flora do Brasil'])
 
-    # Itera sobre posições do floraDoBrasilContent
-    for plantLine in floraDoBrasilContent:
-        # Inicializa variáveis
-        nomeAceito, sinonimo = None, None
-        # Armazena campos no vetor lineSplitted
-        lineSplitted = plantLine.split(',')
-        # Nome: 1ª Posição. Status: 2ª posição. Nome Aceito (Se o nome for sinônimo): 3ª Posição
-        status = lineSplitted[1]
-        # Verificação do status da planta para obter os nomes
-        if status == "SINONIMO":
-            nomeAceito = lineSplitted[2]
-            sinonimo = lineSplitted[0]
+    for entrada in inputContent:
+        lineToWrite = []
+        for floraDoBrasilEntrada in floraDoBrasilContent:
+            if entrada in floraDoBrasilEntrada.split(',')[0]:
+                statusFloraDoBrasil = floraDoBrasilEntrada.split(',')[1]
+                if statusFloraDoBrasil == 'NOME_ACEITO':
+                    statusFloraDoBrasil = "Nome Aceito"
+                    nomeFloraDoBrasil = floraDoBrasilEntrada.split(',')[0]
+                else:
+                    nomeFloraDoBrasil = floraDoBrasilEntrada.split(',')[2]
+                    statusFloraDoBrasil = "Sinônimo"
+                lineToWrite = [entrada, statusFloraDoBrasil, nomeFloraDoBrasil]
 
-        elif status == "NOME_ACEITO":
-            nomeAceito = lineSplitted[0]
-            sinonimo = ""
-        # Escrever saída pra um arquivo
+        if len(lineToWrite) == 0:
+            lineToWrite = [entrada, 'Não Encontrado', 'Não Encontrado']
 
-        lineToWrite = [nomeAceito, sinonimo] if sinonimo != "" else [nomeAceito]
+        for plantListEntrada in plantListContent:
+            if entrada in plantListEntrada.split(',')[0]:
+                statusPlantList = plantListEntrada.split(',')[1]
+                if statusPlantList == 'NOME_ACEITO':
+                    statusPlantList = "Nome Aceito"
+                    nomePlantList = plantListEntrada.split(',')[0]
+                else:
+                    statusPlantList = "Sinônimo"
+                    nomePlantList = plantListEntrada.split(',')[2]
 
-        writeOutput(firstTableOutputPath,'a',lineToWrite)
+                lineToWrite.append(statusPlantList)
+                lineToWrite.append(nomePlantList)
+
+                break
+
+
+        if len(lineToWrite) == 3:
+            lineToWrite.append('Não Encontrado')
+            lineToWrite.append('Não Encontrado')
+
+        if not (lineToWrite[2] == lineToWrite[4]) and lineToWrite[2] != 'Não Encontrado':
+            comparacao = 'Diferente'
+            lineToWrite.append(comparacao)
+
+        writeOutput(firstTableOutputPath, 'a', lineToWrite)
+
+
 
 def generateSecondTable(floraDoBrasilContent, plantListContent, secondTableOutputPath):
+    writeOutput(secondTableOutputPath, 'w', ['Nome Aceito', 'Sinônimo'])
     # Dicliptera ciliaris
     # plantDict: planta -> sinonimos
     plantDict = dict()
@@ -114,7 +137,7 @@ def generateThirdTable():
     raise NotImplementedError
 
 def generateFourthTable(secondTableContent, gbifContent, speciesLinkContent, fourthTableOutputPath):
-
+    writeOutput(fourthTableOutputPath, 'w', ['Nome aceito', 'Cidade', 'Estado', 'País', 'Latitude', 'Longitude'])
     for plant in secondTableContent:
         try:
             accepted_name = plant.split(',')[0]
@@ -131,7 +154,9 @@ def generateFourthTable(secondTableContent, gbifContent, speciesLinkContent, fou
                 longitude = fields[5]
                 lineToWrite = [accepted_name, city, state, country, latitude, longitude]
                 writeOutput(fourthTableOutputPath, 'a', lineToWrite)
+
         for lineSpeciesLink in speciesLinkContent:
+            if accepted_name in lineSpeciesLink:
                 fields = lineSpeciesLink.split(',')
                 city = fields[2]
                 state = fields[3]

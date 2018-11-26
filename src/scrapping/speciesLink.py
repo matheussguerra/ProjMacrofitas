@@ -18,7 +18,7 @@ def toUnicode(s):
             try:
                 return s.decode( cs, errors = 'replace' )
             except Exception as ex:
-                pass 
+                pass
     # force and return only ascii subset
     return unicode(''.join( [ i if ord(i) < 128 else ' ' for i in s ]))
 
@@ -26,7 +26,7 @@ def getData(searchTerm, offset=0, inputFile='../data/ListaMacrofitasResult.csv')
 
 	print 'Searching {},offset = {}'.format(searchTerm, offset)
 	response = requests.get(urlSearchTemplate.format(searchTerm, offset))
-	
+
 	registries = []
 	not_found_registries = []
 
@@ -60,50 +60,48 @@ def getData(searchTerm, offset=0, inputFile='../data/ListaMacrofitasResult.csv')
 				except:
 					generic_name = ''
 				try:
-					specie_name = div.find("span", {"class":"tEa"}).text.encode('utf8')
+					specie_name = div.find("span", {"class":"tEa"}).text.encode('utf8').strip()
 				except:
 					specie_name = ''
 				try:
-					credit = div.find("span", {"id":"credit"}).text.replace('&#169; ', '').encode('utf8')
-				except: 
+					credit = div.find("span", {"id":"credit"}).text.replace('&#169; ', '').encode('utf8').strip()
+				except:
 					credit = ''
+
 				try:
-					locality = div.find("span", {"class":"lP"}).text.encode('utf8')
-				except: locality = ''
-				try:
-					municipality = div.find("span", {"class":"lM"}).text.encode('utf8')
+					municipality = div.find("span", {"class":"lM"}).text.encode('utf8').strip()
 				except:
 					municipality = ''
 				try:
-					state = div.find("span", {"class":"lS"}).text.encode('utf8')
+					state = div.find("span", {"class":"lS"}).text.encode('utf8').strip()
 				except:
 					state = ''
 				try:
-					country = div.find("span", {"class":"lC"}).text.encode('utf8')
-				except: 
+					country = div.find("span", {"class":"lC"}).text.encode('utf8').strip()
+				except:
 					country = ''
 				try:
-					latitude = div.find("span", {"class":"lA"}).text.replace('[lat:', '').encode('utf8')
+					latitude = div.find("span", {"class":"lA"}).text.replace('[lat:', '').encode('utf8').strip()
 				except:
 					latitude = ''
 				try:
-					longitude = div.find("span", {"class":"lO"}).text.replace('long:', '').encode('utf8')
+					longitude = div.find("span", {"class":"lO"}).text.replace('long:', '').encode('utf8').strip()
 				except:
 					longitude = ''
 				try:
-					date = div.find("span", {"class":"cY"}).text.encode('utf8')
+					date = div.find("span", {"class":"cY"}).text.encode('utf8').strip()
 				except:
 					date = ''
 
-				scientificName = "{} {}".format(generic_name, specie_name)
-				
-				registries.append('{},{},{},{},{},{},{},{}'.format(scientificName, locality, municipality, state, country, latitude, longitude, date))
-			
+				scientificName = "{} {}".format(generic_name.strip(), specie_name.strip())
+
+				registries.append('{},{},{},{},{},{},{}'.format(scientificName, municipality, state, country, latitude, longitude, date))
+
 			writeOutput(registries)
 
 			if(offset < max_registries):
 				getData(searchTerm, offset)
-			
+
 	else:
 		response.raise_for_status()
 
