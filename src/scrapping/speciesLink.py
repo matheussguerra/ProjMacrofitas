@@ -55,45 +55,9 @@ def getData(searchTerm, offset=0, inputFile='../data/ListaMacrofitasResult.csv')
 			max_registries = int(hints[2].text)
 
 			for div in divs[1:]:
-				try:
-					generic_name = div.find("span", {"class":"tGa"}).text.encode('utf8')
-				except:
-					generic_name = ''
-				try:
-					specie_name = div.find("span", {"class":"tEa"}).text.encode('utf8').strip()
-				except:
-					specie_name = ''
-				try:
-					credit = div.find("span", {"id":"credit"}).text.replace('&#169; ', '').encode('utf8').strip()
-				except:
-					credit = ''
-
-				try:
-					municipality = div.find("span", {"class":"lM"}).text.encode('utf8').strip()
-				except:
-					municipality = ''
-				try:
-					state = div.find("span", {"class":"lS"}).text.encode('utf8').strip()
-				except:
-					state = ''
-				try:
-					country = div.find("span", {"class":"lC"}).text.encode('utf8').strip()
-				except:
-					country = ''
-				try:
-					latitude = div.find("span", {"class":"lA"}).text.replace('[lat:', '').encode('utf8').strip()
-				except:
-					latitude = ''
-				try:
-					longitude = div.find("span", {"class":"lO"}).text.replace('long:', '').encode('utf8').strip()
-				except:
-					longitude = ''
-				try:
-					date = div.find("span", {"class":"cY"}).text.encode('utf8').strip()
-				except:
-					date = ''
-
-				scientificName = "{} {}".format(generic_name.strip(), specie_name.strip())
+				print div
+				print "\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+				scientificName, municipality, state, country, latitude, longitude, date = parseDiv(div)
 
 				registries.append('{},{},{},{},{},{},{}'.format(scientificName, municipality, state, country, latitude, longitude, date))
 
@@ -104,6 +68,48 @@ def getData(searchTerm, offset=0, inputFile='../data/ListaMacrofitasResult.csv')
 
 	else:
 		response.raise_for_status()
+
+def parseDiv(div):
+    try:
+            generic_name = div.find("span", {"class":"tGa"}).text.encode('utf8')
+    except:
+            generic_name = ''
+    try:
+            specie_name = div.find("span", {"class":"tEa"}).text.encode('utf8').strip()
+    except:
+            specie_name = ''
+    try:
+            credit = div.find("span", {"id":"credit"}).text.replace('&#169; ', '').encode('utf8').strip()
+    except:
+            credit = ''
+
+    try:
+            municipality = div.find("span", {"class":"lM"}).text.encode('utf8').strip()
+    except:
+            municipality = ''
+    try:
+            state = div.find("span", {"class":"lS"}).text.encode('utf8').strip()
+    except:
+            state = ''
+    try:
+            country = div.find("span", {"class":"lC"}).text.encode('utf8').strip()
+    except:
+            country = ''
+    try:
+            latitude = div.find("span", {"class":"lA"}).text.replace('[lat:', '').encode('utf8').strip()
+    except:
+            latitude = ''
+    try:
+            longitude = div.find("span", {"class":"lO"}).text.replace('long:', '').encode('utf8').strip()
+    except:
+            longitude = ''
+    try:
+            date = div.find("span", {"class":"cY"}).text.encode('utf8').strip()
+    except:
+            date = ''
+
+    scientificName = "{} {}".format(generic_name.strip(), specie_name.strip())
+    return scientificName, municipality, state, country, latitude, longitude, date
 
 def writeOutput(registries, outputPath='../data/speciesLink.csv', notFoundPath='../data/notFoundSPLK.csv'):
     try:
@@ -127,7 +133,7 @@ if __name__ == '__main__':
 		lines = file.readlines()
 
 		for line in lines:
-			plant = line.split(',') 
+			plant = line.split(',')
 			if plant[1] == 'SINONIMO':
 				getData(plant[2].strip())
 			else:
