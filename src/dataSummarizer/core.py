@@ -79,7 +79,7 @@ def generateFirstTable(inputContent, floraDoBrasilContent, plantListContent, fir
                 if statusPlantList == 'NOME_ACEITO':
                     statusPlantList = "Nome Aceito"
                     nomePlantList = plantListEntrada.split(',')[0]
-                else:
+                elif statusPlantList == 'SINONIMO':
                     statusPlantList = "Sinônimo"
                     nomePlantList = plantListEntrada.split(',')[2]
 
