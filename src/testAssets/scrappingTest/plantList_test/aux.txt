@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Search results — The Plant List</title>
+	<link rel="search" type="application/opensearchdescription+xml" href="/1.1/opensearch.xml" title="The Plant List" />
+	<script type="text/javascript" src="/1.1/img/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="/1.1/img/jquery.tablesorter.min.js"></script>
+<!--[if lt IE 9]><script type="text/javascript" src="/1.1/img/html5.js"></script><![endif]-->
+	<script type="text/javascript" src="/1.1/img/bsn.AutoSuggest_2.1.3.js"></script>
+	<script type="text/javascript" src="/1.1/img/tpl.js"></script>
+	
+	<link rel="stylesheet" href="/1.1/img/tpl.css"/>
+<!--[if lt IE 9]><link rel="stylesheet" href="/1.1/img/tpl-ie8.css"/><![endif]-->
+<!--[if lt IE 8]><link rel="stylesheet" href="/1.1/img/tpl-ie7.css"/><![endif]-->
+<!--[if lt IE 7]><link rel="stylesheet" href="/1.1/img/tpl-ie6.css"/><![endif]-->
+</head>
+<body>
+
+<header>
+	<h1><a href="/">The Plant List &mdash; A working list for all plant species</a></h1>
+
+	<form id="headerSearchForm" action="/tpl1.1/search" method="get">
+		<input id="q" name="q" placeholder="Enter a genus or genus and species" type="search" value="" size="40"/>
+		<input type="submit" value="Search" />
+	</form>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/1.1/about/">About</a></li>
+		<li><a href="/1.1/browse/">Browse</a></li>
+		<li><a href="/1.1/statistics/">Statistics</a></li>
+		<li><a href="/1.1/feedback/">Feedback</a></li>
+		<li><a href="/1.1/help/">How to use this site</a></li>
+	</ul>
+</nav>
+
+<div id="container">
+	<div id="logo">
+		<ul>
+			<li><a href="http://www.cbd.int/2011-2020"><img src="/1.1/img/logo-2011.png" alt="2011–2020 United Nations Decade on Biodiversity"/></a></li>
+			<li><a href="http://www.kew.org/"><img src="/1.1/img/logo-kew.png" alt="Royal Botanic Gardens, Kew"/></a></li>
+			<li><a href="http://www.mobot.org/"><img src="/1.1/img/logo-missouri.png" alt="Missouri Botanical Garden"/></a></li>
+			<li><a href="http://www.compositae.org/checklist/"><img src="/1.1/img/logo-tica.png" alt="International Compositae Alliance"/></a></li>
+			<li><a href="http://www.ildis.org/"><img src="/1.1/img/logo-ildis.png" alt="ILDIS"/></a></li>
+			<li><a href="http://plantnet.rbgsyd.nsw.gov.au/iopi/iopihome.htm"><img src="/1.1/img/logo-iopi.png" alt="IOPI"/></a></li>
+			<li><a href="http://www.nybg.org/"><img src="/1.1/img/logo-nybg.png" alt="New York Botanic Garden"/></a></li>
+			<li><a href="http://www.ipni.org/"><img src="/1.1/img/logo-ipni.png" alt="International Plant Names Index"/></a></li>
+			<li><a href="http://www.cbd.int/"><img src="/1.1/img/logo-cbd.png" alt="Convention on Biological Diversity"/></a></li>
+			<li><a href="http://www.rbge.org.uk/"><img src="/1.1/img/logo-rbge.png" alt="Royal Botanic Garden Edinburgh"/></a></li>
+			<li><a href="http://www.sanbi.org/"><img src="/1.1/img/logo-sanbi.png" alt="South African National Biodiversity Institute"/></a></li>
+			<li><a href="http://www.ville-ge.ch/cjb/"><img src="/1.1/img/logo-cjb.png" alt="Les conservatoire et jardin botaniques de la Ville de Genève"/></a></li>
+		</ul>
+	</div>
+
+	<div id="columns">
+<section>
+	<h2>Results</h2>
+
+
+
+
+
+	<p>177 plant name records match your search criteria <strong><i>Dyschoriste</i></strong>.  The results are below.</p>
+
+
+	<p>The names found have these generic epithets:</p>
+
+	<ul class="genuslist">
+		<li>
+			<i class="genus">Dyschoriste</i>; 			species epithets begin with: <a href="#Dyschoriste-A">A</a> <a href="#Dyschoriste-B">B</a> <a href="#Dyschoriste-C">C</a> <a href="#Dyschoriste-D">D</a> <a href="#Dyschoriste-E">E</a> <a href="#Dyschoriste-F">F</a> <a href="#Dyschoriste-G">G</a> <a href="#Dyschoriste-H">H</a> <a href="#Dyschoriste-J">J</a> <a href="#Dyschoriste-K">K</a> <a href="#Dyschoriste-L">L</a> <a href="#Dyschoriste-M">M</a> <a href="#Dyschoriste-N">N</a> <a href="#Dyschoriste-O">O</a> <a href="#Dyschoriste-P">P</a> <a href="#Dyschoriste-Q">Q</a> <a href="#Dyschoriste-R">R</a> <a href="#Dyschoriste-S">S</a> <a href="#Dyschoriste-T">T</a> <a href="#Dyschoriste-V">V</a> <a href="#Dyschoriste-X">X</a> 
+		</li>
+</ul>
+
+
+<p>The results can also be <a href="/tpl1.1/search?q=Dyschoriste&amp;csv=true" type="text/csv">downloaded as a <abbr title="comma-separated values">CSV</abbr> file</a> <small>(Unicode UTF-8 encoding)</small>.</p>
+<p id="tablehelp">See <a href="/1.1/about/#status">"Status"</a>, <a href="/1.1/about/#confidence">"Confidence level"</a>, <a href="/1.1/about/#collaborators">"Source"</a> for definitions.</p>
+
+<table class="names results" id="tbl-results">
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Status</th>
+		<th>Confi&shy;dence level</th>
+		<th>Source</th>
+		<th>Date supplied</th>
+	</tr>
+</thead>
+<tbody>
+
+
+
+
+	<tr id="Dyschoriste-A">
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779642'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">actinotricha</i> <span class="authorship">Chiov.</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779643'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">adscendens</i> <span class="authorship">(Hochst. ex Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779644'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">affinis</i> <span class="authorship">(Lindau) S.Moore</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779645'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">alba</i> <span class="authorship">S.Moore</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779646'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">albiflora</i> <span class="authorship">Lindau</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779647'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">amoena</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779648'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">angusta</i> <span class="authorship">(A.Gray) Small</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779649'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">augustifolia</i> <span class="authorship">(Hemsl.) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779650'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">axillaris</i> <span class="authorship">Wassh. & J.R.I.Wood</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-B">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779651'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">bayatensis</i> <span class="authorship">(Urb.) Urb.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779652'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">bayensis</i> <span class="authorship">Thulin</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779653'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">bilabiata</i> <span class="authorship">(Seem.) Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779654'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">biloba</i> <span class="authorship">Hochst.</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779655'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">boliviana</i> <span class="authorship">Wassh. & J.R.I.Wood</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779656'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">broiloi</i> <span class="authorship">Pic.Serm.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779657'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">buchenavii</i> <span class="authorship">Vatke</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779658'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">burchellii</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-C">
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/kew-2779659'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">candida</i> <span class="authorship">Brandegee</span></span></a></td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779660'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">capitata</i> <span class="authorship">(Oerst.) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779661'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">capricornis</i> <span class="authorship">C.B.Clarke</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779662'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">ceciliae</i> <span class="authorship">Wassh. & J.R.I.Wood</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779663'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">celebica</i> <span class="authorship">Bremek.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779664'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">cernua</i> <span class="authorship">Nees</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779665'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">ciliata</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779666'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">clarkei</i> <span class="authorship">(Vatke) Benoist</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779667'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">clinopodioides</i> <span class="authorship">Mildbr.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/tro-100402'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">coahuilensis</i> <span class="authorship">Steyerm.</span></span></a></td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#tropicos">TRO</a></td>
+		<td class="dateExported"><time>2012-04-18</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/kew-2779668'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">costata</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779669'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">crenulata</i> <span class="authorship">Kobuski</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779670'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">crinita</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/kew-2779671'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">cubensis</i> <span class="authorship">Urb.</span></span></a></td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779672'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">cunenensis</i> <span class="authorship">C.B.Clarke</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-D">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779673'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">dalyi</i> <span class="authorship">A.G.Mill.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779674'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">decora</i> <span class="authorship">S.Moore</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779675'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">decumbens</i> <span class="authorship">(A.Gray) Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779676'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">decumbens</i> <span class="authorship">E.A.Bruce</span></span></a> [Illegitimate]</td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779677'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">depressa</i> <span class="authorship">(L.) Nees</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/kew-2779678'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">diffusa</i> <span class="authorship">(Nees) Urb.</span></span></a></td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-E">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779680'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">erecta</i> <span class="authorship">(Burm.f.) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/kew-2779681'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">erecta</i> <span class="authorship">C.B.Clarke</span></span></a> [Unplaced]</td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779682'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">erythrorhiza</i> <span class="authorship">(Nees) Lindau</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-F">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779683'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">fischeri</i> <span class="authorship">Lindau</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/kew-2779684'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">fleckii</i> <span class="authorship">Schinz</span></span></a></td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779685'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">fruticulosa</i> <span class="authorship">(Rolfe) Chiov.</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-G">
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/kew-2779686'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">geniculata</i> <span class="authorship">Nees</span></span></a> [Unplaced]</td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779687'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">glandulosa</i> <span class="authorship">Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779688'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">gracilicaulis</i> <span class="authorship">(Benoist) Benoist</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779689'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">gracilis</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779690'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">greenmanii</i> <span class="authorship">Kobuski</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-H">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779691'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">heudelotiana</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779692'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">hildebrandtii</i> <span class="authorship">(S.Moore) Lindau ex O.B.Clarke</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/tro-50119978'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">hildebrandtii</i> <span class="authorship">(S. Moore) S. Moore</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#tropicos">TRO</a></td>
+		<td class="dateExported"><time>2012-04-18</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779693'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">hildebrandtii</i> <span class="infraspr">var.</span> <i class="infraspe">mollis</i> <span class="authorship">S.Moore</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779694'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">hirsuta</i> <span class="authorship">(Oerst.) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779695'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">hirsutissima</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779696'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">hispidula</i> <span class="authorship">(Baker) Benoist</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779697'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">hispidula</i> <span class="infraspr">var.</span> <i class="infraspe">grandiflora</i> <span class="authorship">Benoist</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779698'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">hondurensis</i> <span class="authorship">Leonard</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779699'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">humilis</i> <span class="authorship">Lindau</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779701'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">humilis</i> <span class="infraspr">f.</span> <i class="infraspe">variegata</i> <span class="authorship">Stuck. ex Seckt</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/tro-103809'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">humilis</i> <span class="infraspr">f.</span> <i class="infraspe">variegata</i> <span class="authorship">Stuck.</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#tropicos">TRO</a></td>
+		<td class="dateExported"><time>2012-04-18</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779702'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">humistrata</i> <span class="authorship">(Shuttlew. ex Nees) Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779703'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">hygrophiloides</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/tro-100407'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">hygrophyllodes</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#tropicos">TRO</a></td>
+		<td class="dateExported"><time>2012-04-18</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779704'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">hyssopifolia</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-J">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779705'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">jaliscensis</i> <span class="authorship">Kobuski</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779706'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">jasminum</i> <span class="authorship">Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-K">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2604252'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">keniensis</i> <span class="authorship">Malombe, Mwachala & Vollesen</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/kew-2779707'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">kilimandscharica</i> <span class="authorship">Lindau</span></span></a></td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2607019'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">kitongaensis</i> <span class="authorship">Vollesen</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779708'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">kyimbalensis</i> <span class="authorship">(Lindau) S.Moore</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-L">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779709'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">lavandulacea</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779710'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">linearis</i> <span class="authorship">(Torr. & A.Gray) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779711'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">linearis</i> <span class="infraspr">var.</span> <i class="infraspe">cinerascens</i> <span class="authorship">(Henr. & Hilsenb.) B.L.Turner</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779712'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">linearis</i> <span class="infraspr">var.</span> <i class="infraspe">decumbens</i> <span class="authorship">(A.Gray) B.L.Turner</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779713'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">linearis</i> <span class="infraspr">var.</span> <i class="infraspe">sanpatriciensis</i> <span class="authorship">Henr.</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779714'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">linearis</i> <span class="infraspr">var.</span> <i class="infraspe">schiedeana</i> <span class="authorship">(Nees) B.L.Turner</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779715'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">linifolia</i> <span class="authorship">(T.Anderson ex C.B.Clarke) C.B.Clarke</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779716'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">litoralis</i> <span class="authorship">(L.f.) Nees</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/kew-2779717'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">lloydii</i> <span class="authorship">Kobuski</span></span></a></td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2587686'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">longicalyx</i> <span class="authorship">(Deflers) Lindau ex O.Schwartz</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779718'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">lycioides</i> <span class="authorship">Chiov.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-M">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779719'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">madagascariensis</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779720'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">madurensis</i> <span class="authorship">Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779721'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">marandellae</i> <span class="authorship">Merxm.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779722'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">maranhonis</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779723'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">matopensis</i> <span class="authorship">N.E.Br.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779724'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">mauritiana</i> <span class="authorship">Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779725'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">mcvaughii</i> <span class="authorship">T.F.Daniel</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779726'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">microphylla</i> <span class="authorship">(Cav.) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779727'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">miskatensis</i> <span class="authorship">Thulin</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779728'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">mollis</i> <span class="authorship">(S.Moore) C.B.Clarke</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779729'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">monroi</i> <span class="authorship">S.Moore</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779730'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">multicaulis</i> <span class="authorship">(Hochst. ex A. Rich.) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779731'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">mutica</i> <span class="authorship">(S.Moore) C.B.Clarke</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2899698'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">mysorensis</i> <span class="authorship">(Klein ex Schult.) M.R.Almeida</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-N">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779732'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">nagchana</i> <span class="authorship">(Nees) Bennet</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779733'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">natalensis</i> <span class="authorship">(T.Anderson) Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779734'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">niederleinii</i> <span class="authorship">Lindau</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779735'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">nobilior</i> <span class="authorship">C.B.Clarke</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779736'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">novogaliciana</i> <span class="authorship">T.F.Daniel</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/kew-2779737'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">nudanthera</i> <span class="authorship">C.B.Clarke</span></span></a></td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779738'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">nummulifolia</i> <span class="authorship">Chiov.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779739'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">nyassica</i> <span class="authorship">Gilli</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-O">
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779740'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">oaxacensis</i> <span class="authorship">Kobuski</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779741'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">oblongifolia</i> <span class="authorship">(Michx.) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779742'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">oblongifolia</i> <span class="infraspr">var.</span> <i class="infraspe">angusta</i> <span class="authorship">(A.Gray) R.W.Long</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779743'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">oblongifolia</i> <span class="infraspr">f.</span> <i class="infraspe">glabra</i> <span class="authorship">Kubitski</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/tro-102631'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">oblongifolia</i> <span class="infraspr">var.</span> <i class="infraspe">oblongifolia</i> </span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#tropicos">TRO</a></td>
+		<td class="dateExported"><time>2012-04-18</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779744'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">oligosperma</i> <span class="authorship">(Steenis) Bremek.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779745'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">ovata</i> <span class="authorship">(Cav.) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-P">
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779746'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">paraguariensis</i> <span class="authorship">Kobuski</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/kew-2903720'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">parvula</i> <span class="authorship">(Alain & Leonard) Greuter & R.Rankin</span></span></a></td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779747'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">pedicellata</i> <span class="authorship">C.B.Clarke</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779748'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">perrottetii</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779749'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">persoonii</i> <span class="authorship">(T.Anderson) Kuntze</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779750'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">petalidioides</i> <span class="authorship">S.Moore</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779751'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">pilifera</i> <span class="authorship">Hutch.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779752'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">pinetorum</i> <span class="authorship">Kobuski</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779753'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">poliodes</i> <span class="authorship">Leonard & Gentry</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779756'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">principis</i> <span class="authorship">Benoist</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779757'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">pringlei</i> <span class="authorship">Greenm.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779758'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">procumbens</i> <span class="authorship">E.A.Bruce</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779759'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">prostrata</i> <span class="authorship">Wassh. & J.R.I.Wood</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779760'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">pseuderecta</i> <span class="authorship">Mildbr.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/tro-50005658'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">pubescens</i> <span class="authorship">G. Don</span></span></a></td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#tropicos">TRO</a></td>
+		<td class="dateExported"><time>2012-04-18</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779761'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">pulegium</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779762'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">purpusii</i> <span class="authorship">Kobuski</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-Q">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779763'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">quadrangularis</i> <span class="authorship">(Oerst.) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2587687'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">quadrisepala</i> <span class="authorship">(C.B.Clarke) Lindau</span></span></a> [Illegitimate]</td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779764'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">quitensis</i> <span class="authorship">(Kunth) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-R">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779765'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">radicans</i> <span class="authorship">(Hochst. ex A.Rich.) Nees</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779766'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">repanda</i> <span class="authorship">(A.Gray) A.C.Sm.</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779767'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">repens</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779768'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">rogersii</i> <span class="authorship">S.Moore</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779769'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">rosei</i> <span class="authorship">Kobuski</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779770'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">rubiginosa</i> <span class="authorship">Ramamoorthy & Wassh.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-S">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779771'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">sagittata</i> <span class="authorship">Kobuski</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2607020'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">sallyae</i> <span class="authorship">Vollesen</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779772'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">saltuensis</i> <span class="authorship">Fernald</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779773'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">schiedeana</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779774'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">schiedeana</i> <span class="infraspr">var.</span> <i class="infraspe">cinerascens</i> <span class="authorship">Henr. & Hilsenb.</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779775'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">schiedeana</i> <span class="infraspr">var.</span> <i class="infraspe">decumbens</i> <span class="authorship">(A.Gray) Henr.</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779776'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">schiedeana</i> <span class="infraspr">var.</span> <i class="infraspe">prostrata</i> <span class="authorship">Henr.</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/tro-50171622'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">schiedeana</i> <span class="infraspr">var.</span> <i class="infraspe">schiedeana</i> </span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#tropicos">TRO</a></td>
+		<td class="dateExported"><time>2012-04-18</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779777'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">schottiana</i> <span class="authorship">(Nees) Kobuski</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779778'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">serpyllifolia</i> <span class="authorship">(Nees) Benoist</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779779'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">serpyllum</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/kew-2779780'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">sessilifolia</i> <span class="authorship">(Lindau) S.Moore</span></span></a></td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Unresolved"><a href='/tpl1.1/record/kew-2779781'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">setosa</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Unresolved</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779782'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">sinica</i> <span class="authorship">H.S.Lo</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779783'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">siphonantha</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779784'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">siphonantha</i> <span class="infraspr">var.</span> <i class="infraspe">buchenavii</i> <span class="authorship">(Vatke) Benoist</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779785'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">siphonantha</i> <span class="infraspr">var.</span> <i class="infraspe">lanata</i> <span class="authorship">Benoist</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779786'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">siphonantha</i> <span class="infraspr">var.</span> <i class="infraspe">scandens</i> <span class="authorship">Benoist</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779787'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">skutchii</i> <span class="authorship">Leonard</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779788'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">smithii</i> <span class="authorship">Leonard</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779789'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">somalensis</i> <span class="authorship">Rendle</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779790'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">subquadrangularis</i> <span class="authorship">(Lindau) C.B.Clarke</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-T">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779791'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">tanganyikensis</i> <span class="authorship">C.B.Clarke</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2607021'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">tanzaniensis</i> <span class="authorship">Vollesen</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779792'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">tenera</i> <span class="authorship">Lindau</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779793'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">thunbergiiflora</i> <span class="authorship">(S.Moore) Lindau</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779794'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">transvaalensis</i> <span class="authorship">C.B.Clarke</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779795'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">trichanthera</i> <span class="authorship">Kobuski</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779796'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">trichocalyx</i> <span class="authorship">(Oliv.) Lindau</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2607022'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">trichocalyx</i> <span class="infraspr">subsp.</span> <i class="infraspe">verticillaris</i> <span class="authorship">(C.B.Clarke) Vollesen</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-L"><img src="/1.1/img/L.png" alt="L"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779797'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">tubicalyx</i> <span class="authorship">C.B.Clarke</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779798'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">tweedieana</i> <span class="authorship">(Nees) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-V">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779799'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">vagans</i> <span class="authorship">(Wight) Kuntze</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779800'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">valeriana</i> <span class="authorship">Leonard</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779801'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">venturii</i> <span class="authorship">Leonard</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779802'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">verdickii</i> <span class="authorship">De Wild.</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Synonym"><a href='/tpl1.1/record/kew-2779803'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">verticillaris</i> <span class="authorship">(T.Anderson ex Oliv.) C.B.Clarke</span></span></a></td>
+		<td>Synonym</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779804'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">vestita</i> <span class="authorship">Benoist</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr>
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779805'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">volkensii</i> <span class="authorship">(Lindau) C.B.Clarke</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+
+
+	<tr id="Dyschoriste-X">
+
+		<td class="name Accepted"><a href='/tpl1.1/record/kew-2779806'><span class="name"><i class="genus">Dyschoriste</i> <i class="species">xylopoda</i> <span class="authorship">Kobuski</span></span></a></td>
+		<td>Accepted</td>
+		<td class="C-M"><img src="/1.1/img/M.png" alt="M"/></td>
+		<td class="source"><a href="/1.1/about/#wcsir">WCSP (in review)</a></td>
+		<td class="dateExported"><time>2012-03-23</time></td>
+	</tr>
+
+</tbody>
+</table>
+
+<script type="text/javascript">tplTableInit("tbl-results");</script>
+
+
+</section>
+
+	</div>
+</div>
+
+<footer>
+	<p>
+		&copy; The Plant List 2013 &mdash;
+		<a rel="license" href="/1.1/terms/">Terms and Conditions</a> &mdash;
+		<a href="/1.1/cite/">How to Cite</a>
+	</p>
+</footer>
+
+<script type="text/javascript" src="http://include.reinvigorate.net/re_.js"></script>
+<script type="text/javascript">
+try {
+	reinvigorate.track("qqd10-7tcw301jmk");
+} catch(err) {}
+</script>
+
+</body>
+</html>
+

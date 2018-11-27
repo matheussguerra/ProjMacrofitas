@@ -16,7 +16,7 @@ def getOneEntry(searchTerm):
         raw_http = response.text
         soup = BeautifulSoup(raw_http)
 
-        isAccepted = verifyAccepted(soup)    
+        isAccepted = verifyAccepted(soup)
         synonymous = getSynonymous(soup)
 
         return isAccepted, synonymous
@@ -24,9 +24,9 @@ def getOneEntry(searchTerm):
         return 'Bad Response!'
 
 def getAllEntries(inputPath='../data/ListaMacrofitasResult.csv', outputPath='../data/plantList.csv', notFoundPath = '../data/notFoundPlantList.csv'):
+    #output = csv.writer(outputFile)
+    #allResponses = []
     outputFile = open(outputPath, 'a')
-    output = csv.writer(outputFile)
-    allResponses = []
     with open(inputPath) as input:
         lines = input.readlines()
 
@@ -37,7 +37,7 @@ def getAllEntries(inputPath='../data/ListaMacrofitasResult.csv', outputPath='../
             response = requests.get(urlSearchTemplate.format(link))
 
             if response.ok:
-                link = link.replace("\n", "")          
+                link = link.replace("\n", "")
                 os.system('wget -q -O aux.txt "' + link +  '"')
                 web_page = open('aux.txt', 'r')
                 raw_http = web_page.read()
@@ -51,12 +51,12 @@ def getAllEntries(inputPath='../data/ListaMacrofitasResult.csv', outputPath='../
                     with open(notFoundPath, 'a') as notFound:
                         notFound.write(line + ' not found.\n')
 
-                elif "Search results" in title:                    
+                elif "Search results" in title:
                     identifier,genus,species = getCorrectLink(soup)
                     file = open('toProcess.txt', 'a')
                     file.write(identifier + ',' + genus + ' ' + species +'\n')
 
-                else:    
+                else:
                     status = verifyStatus(soup)
                     if status == 'SINONIMO':
                         synonymous = getSynonymous(soup)
@@ -84,8 +84,8 @@ def getCorrectLink(soup):
         genus = str(tr('td')[0]('span')[0]('i')[0].text.encode('utf-8'))
         species = str(tr('td')[0]('span')[0]('i')[1].text.encode('utf-8'))
         #author = str(tr('td')[0]('span')[1].text.encode('utf-8'))
-        status = str(tr('td')[1].text.encode('utf-8'))  
-   
+        status = str(tr('td')[1].text.encode('utf-8'))
+
 
         if status == "Accepted":
             identifier = tr.find('a', href = True)
@@ -99,7 +99,7 @@ def getCorrectLink(soup):
 def verifyStatus(soup):
     tag_h1 =  soup('h1')[1]('span')[3]('a')[0]
     status = tag_h1['href']
-        
+
     if 'accepted' in status:
         return 'NOME_ACEITO'
     elif 'synonym' in status:
@@ -136,12 +136,12 @@ def reprocessEntries(inputFile='toProcess.txt', outputPath='../data/plantList.cs
                     with open(notFoundPath, 'a') as notFound:
                         notFound.write(line + ' not found.\n')
 
-                elif "Search results" in title:                    
+                elif "Search results" in title:
                     identifier,genus,species = getCorrectLink(soup)
                     file = open('toProcess.txt', 'a')
                     file.write(identifier + ',' + genus + ' ' + species + '\n')
 
-                else:    
+                else:
                     status = verifyStatus(soup)
                     if status == 'SYNONYM':
                         synonymous = getSynonymous(soup)
@@ -158,11 +158,11 @@ def reprocessEntries(inputFile='toProcess.txt', outputPath='../data/plantList.cs
                     outputFile.write(response + '\n')
     outputFile.close()
     file.close()
+    reprocessEntries()
 
 
 def main():
     getAllEntries()
-    reprocessEntries()
 
 if __name__ == '__main__':
     main()

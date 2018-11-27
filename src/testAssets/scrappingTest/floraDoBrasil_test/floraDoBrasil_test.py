@@ -1,6 +1,6 @@
 # encoding: utf-8
 import sys
-sys.path.insert(0, '/home/yudi/ProjMacrofitas/src/scrapping')
+sys.path.insert(0, '/home/guerra/Área de trabalho/UTFPR/Eng2/src/scrapping')
 from floraDoBrasil import getData
 import unittest
 
