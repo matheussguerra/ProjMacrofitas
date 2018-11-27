@@ -79,15 +79,13 @@ def generateFirstTable(inputContent, floraDoBrasilContent, plantListContent, fir
                 if statusPlantList == 'NOME_ACEITO':
                     statusPlantList = "Nome Aceito"
                     nomePlantList = plantListEntrada.split(',')[0]
-                else:
+                elif statusPlantList == 'SINONIMO':
                     statusPlantList = "Sinônimo"
                     nomePlantList = plantListEntrada.split(',')[2]
 
                 lineToWrite.append(statusPlantList)
                 lineToWrite.append(nomePlantList)
-
                 break
-
 
         if len(lineToWrite) == 3:
             lineToWrite.append('Não Encontrado')
@@ -98,7 +96,6 @@ def generateFirstTable(inputContent, floraDoBrasilContent, plantListContent, fir
             lineToWrite.append(comparacao)
 
         writeOutput(firstTableOutputPath, 'a', lineToWrite)
-
 
 
 def generateSecondTable(floraDoBrasilContent, plantListContent, secondTableOutputPath):
