@@ -1,3 +1,5 @@
+# coding: utf-8
+
 """
 - Script para obtenção de dados de plantas da base Flora do Brasil
 - Formato: {Nome que foi pesquisado},{Status: NOME_ACEITO/SINÔNIMO},{Nome aceito -> caso a planta pesquisada seja sinônimo}
@@ -42,7 +44,7 @@ def getOneEntry(urlRequestTemplate, searchTerm, outputPath, notFoundPath):
 	# Método para retirar informações do JSON e registrá-las
 	parseAndWriteJSON(queryResult, outputPath)
 
-def getManyEntries(urlRequestTemplate, inputFile,outputPath, notFoundPath):
+def getManyEntries(urlRequestTemplate, inputFile, outputPath, notFoundPath):
 	results = []
 	# Arquivo de entrada é aberto para leitura
 	with open(inputFile) as inputFile:

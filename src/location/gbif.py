@@ -1,6 +1,6 @@
 import requests
 
-def getLocation(sciName):
+def getLocation(sciName, outputPath):
     urlTemplate = 'http://api.gbif.org/v1/occurrence/search?scientificName={}'
 
     response = requests.get(urlTemplate.format(sciName))
@@ -36,14 +36,14 @@ def getLocation(sciName):
             except:
                 date = ''
 
-        writeOutput('{},{},{},{},{},{},{}'.format(scientificName, municipality, state, country, latitude, longitude, date))
+        writeOutput(outputPath, '{},{},{},{},{},{},{}'.format(scientificName, municipality, state, country, latitude, longitude, date))
 
 
-def writeOutput(line):
+def writeOutput(path ,line):
     try:
-        outputLocation = open('../data/gbifLocations.csv', 'a')
+        outputLocation = open(path, 'a')
     except:
-        outputLocation = open('../data/gbifLocations.csv', 'w')
+        outputLocation = open(path, 'w')
 
     outputLocation.write(line + "\n")
 
@@ -55,9 +55,9 @@ if __name__ == '__main__':
     for line in lines:
         try:
             if line.split(',')[1] == 'ok':
-                getLocation(line.split(',')[0].replace('\n',''))
+                getLocation(line.split(',')[0].replace('\n',''), "../data/gbifLocations.csv")
             else:
-                getLocation(line.split(',')[0].replace('\n',''))
+                getLocation(line.split(',')[0].replace('\n',''), "../data/gbifLocations.csv")
             print line.split(',')[0].replace('\n','')
         except:
             errors.write(line)
