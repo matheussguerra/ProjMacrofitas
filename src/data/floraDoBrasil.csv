@@ -5,14 +5,14 @@ Hygrophila guianensis,NOME_ACEITO,
 Justicia comata,NOME_ACEITO,
 Justicia aequilabris,NOME_ACEITO,
 Justicia laevilinguis,NOME_ACEITO,
-Nelsonia brunelloides,SINONIMO,Nelsonia brunelloides
+Nelsonia brunelloides,SINONIMO,Nelsonia canescens
 Ruellia bahiensis,NOME_ACEITO,
 Ruellia paniculata,NOME_ACEITO,
 Sesuvium portulacastrum,NOME_ACEITO,
-Echinodorus andrieuxii,SINONIMO,Echinodorus andrieuxii
-Echinodorus argentinensis,SINONIMO,Echinodorus argentinensis
+Echinodorus andrieuxii,SINONIMO,Echinodorus subalatus
+Echinodorus argentinensis,SINONIMO,Echinodorus grandiflorus
 Echinodorus aschersonianus,NOME_ACEITO,
-Echinodorus bolivianus,SINONIMO,Echinodorus bolivianus
+Echinodorus bolivianus,SINONIMO,Helanthium bolivianum
 Echinodorus floribundus,NOME_ACEITO,
 Echinodorus glandulosus,NOME_ACEITO,
 Echinodorus grandiflorus,NOME_ACEITO,
@@ -27,14 +27,14 @@ Echinodorus pubescens,NOME_ACEITO,
 Echinodorus reticulatus,NOME_ACEITO,
 Echinodorus scaber,NOME_ACEITO,
 Echinodorus subalatus,NOME_ACEITO,
-Echinodorus tenellus,SINONIMO,Echinodorus tenellus
-Echinodorus teretoscapus,SINONIMO,Echinodorus teretoscapus
+Echinodorus tenellus,SINONIMO,Helanthium tenellum
+Echinodorus teretoscapus,SINONIMO,Echinodorus glaucus
 Helanthium tenellum,NOME_ACEITO,
 Hydrocleys martii,NOME_ACEITO,
 Hydrocleys nymphoides,NOME_ACEITO,
 Hydrocleys parviflora,NOME_ACEITO,
 Limnocharis flava,NOME_ACEITO,
-Limnocharis laforestii,SINONIMO,Limnocharis laforestii
+Limnocharis laforestii,SINONIMO,Limnocharis laforesti
 Sagittaria guayanensis,NOME_ACEITO,
 Sagittaria lancifolia,NOME_ACEITO,
 Sagittaria montevidensis,NOME_ACEITO,
@@ -52,13 +52,13 @@ Amaranthus spinosus,NOME_ACEITO,
 Amaranthus viridis,NOME_ACEITO,
 Blutaparon portulacoides,NOME_ACEITO,
 Chamissoa altissima,NOME_ACEITO,
-Chenopodium ambrosioides,SINONIMO,Chenopodium ambrosioides
+Chenopodium ambrosioides,SINONIMO,Dysphania ambrosioides
 Gomphrena demissa,NOME_ACEITO,
 Gomphrena elegans,NOME_ACEITO,
-Hebanthe paniculata,SINONIMO,Hebanthe paniculata
+Hebanthe paniculata,SINONIMO,Hebanthe eriantha
 Pfaffia glomerata,NOME_ACEITO,
-Pfaffia pulverulenta,SINONIMO,Pfaffia pulverulenta
-Salicornia gaudichaudiana,SINONIMO,Salicornia gaudichaudiana
+Pfaffia pulverulenta,SINONIMO,Hebanthe pulverulenta
+Salicornia gaudichaudiana,SINONIMO,Salicornia fruticosa
 Crinum americanum,NOME_ACEITO,
 Centella asiatica,NOME_ACEITO,
 Eryngium ebracteatum,NOME_ACEITO,
@@ -105,18 +105,18 @@ Hydrocotyle verticillata,NOME_ACEITO,
 Bactris maraja,NOME_ACEITO,
 Mauritia carana,NOME_ACEITO,
 Mauritiella armata,NOME_ACEITO,
-Aristolochia macroura,SINONIMO,Aristolochia macroura
+Aristolochia macroura,SINONIMO,Aristolochia trilobata
 Acanthospermum australe,NOME_ACEITO,
 Acanthospermum hispidum,NOME_ACEITO,
 Achyrocline alata,NOME_ACEITO,
 Acmella uliginosa,NOME_ACEITO,
 Adenostemma brasilianum,NOME_ACEITO,
 Ageratum conyzoides,NOME_ACEITO,
-Aster squamatus,SINONIMO,Aster squamatus
+Aster squamatus,SINONIMO,Symphyotrichum squamatum
 Baccharis microcephala,NOME_ACEITO,
 Baccharis penningtonii,NOME_ACEITO,
 Baccharis spicata,NOME_ACEITO,
-Baccharis usterii,SINONIMO,Baccharis usterii
+Baccharis usterii,SINONIMO,Baccharis junciformis
 Barrosoa betonicaeformis,NOME_ACEITO,
 Bidens laevis,NOME_ACEITO,
 Blainvillea dichotoma,NOME_ACEITO,
@@ -133,13 +133,13 @@ Eclipta megapotamica,NOME_ACEITO,
 Eclipta prostrata,NOME_ACEITO,
 Egletes viscosa,NOME_ACEITO,
 Elephantopus mollis,NOME_ACEITO,
-Emilia coccinea,SINONIMO,Emilia coccinea
+Emilia coccinea,SINONIMO,Emilia fosbergii
 Emilia sonchifolia,NOME_ACEITO,
 Enydra anagallis,NOME_ACEITO,
 Enydra radicans,NOME_ACEITO,
 Erechtites hieracifolius,NOME_ACEITO,
 Erechtites valerianifolius,NOME_ACEITO,
-Eupatorium candolleanum,SINONIMO,Eupatorium candolleanum
+Eupatorium candolleanum,SINONIMO,Barrosoa candolleana
 Gamochaeta americana,NOME_ACEITO,
 Grazielia intermedia,NOME_ACEITO,
 Gymnocoronis spilanthoides,NOME_ACEITO,
@@ -169,8 +169,8 @@ Tilesia baccata,NOME_ACEITO,
 Trichospira verticillata,NOME_ACEITO,
 Vernonanthura beyrichii,NOME_ACEITO,
 Vernonanthura brasiliana,NOME_ACEITO,
-Vernonia scorpioides,SINONIMO,Vernonia scorpioides
-Wedelia alagoensis,SINONIMO,Wedelia alagoensis
+Vernonia scorpioides,SINONIMO,Cyrtocymura scorpioides
+Wedelia alagoensis,SINONIMO,Wedelia villosa
 Wedelia calycina,NOME_ACEITO,
 Begonia cucullata,NOME_ACEITO,
 Begonia hirtella,NOME_ACEITO,
@@ -178,15 +178,15 @@ Begonia reniformis,NOME_ACEITO,
 Pleonotoma clematis,NOME_ACEITO,
 Tanaecium pyramidatum,NOME_ACEITO,
 Tynanthus polyanthus,NOME_ACEITO,
-Cordia curassavica,SINONIMO,Cordia curassavica
-Cordia multispicata,SINONIMO,Cordia multispicata
+Cordia curassavica,SINONIMO,Varronia curassavica
+Cordia multispicata,SINONIMO,Varronia multispicata
 Cordia superba,NOME_ACEITO,
 Cordia tetrandra,NOME_ACEITO,
 Euploca procumbens,NOME_ACEITO,
 Heliotropium angiospermum,NOME_ACEITO,
 Heliotropium elongatum,NOME_ACEITO,
 Heliotropium indicum,NOME_ACEITO,
-Heliotropium procumbens,SINONIMO,Heliotropium procumbens
+Heliotropium procumbens,SINONIMO,Euploca procumbens
 Tournefortia bicolor,NOME_ACEITO,
 Cardamine bonariensis,NOME_ACEITO,
 Burmannia australis,NOME_ACEITO,
@@ -204,13 +204,13 @@ Lobelia exaltata,NOME_ACEITO,
 Lobelia fistulosa,NOME_ACEITO,
 Lobelia nummularioides,NOME_ACEITO,
 Lobelia xalapensis,NOME_ACEITO,
-Pratia hederacea,SINONIMO,Pratia hederacea
+Pratia hederacea,SINONIMO,Lobelia hederacea
 Canna indica,NOME_ACEITO,
 Canna glauca,NOME_ACEITO,
 Aneilema umbrosum,NOME_ACEITO,
 Commelina erecta,NOME_ACEITO,
-Commelina nudiflora,SINONIMO,Commelina nudiflora
-Commelina schomburgkiana,SINONIMO,Commelina schomburgkiana
+Commelina nudiflora,SINONIMO,Murdannia nudiflora
+Commelina schomburgkiana,SINONIMO,Commelina longicaulis
 Dichorisandra hexandra,NOME_ACEITO,
 Floscopa glabrata,NOME_ACEITO,
 Tripogandra diuretica,NOME_ACEITO,
@@ -224,13 +224,13 @@ Ipomoea cairica,NOME_ACEITO,
 Ipomoea carnea,NOME_ACEITO,
 Ipomoea cynanchifolia,NOME_ACEITO,
 Ipomoea fimbriosepala,NOME_ACEITO,
-Ipomoea fistulosa,SINONIMO,Ipomoea fistulosa
+Ipomoea fistulosa,SINONIMO,Ipomoea carnea
 Ipomoea indivisa,NOME_ACEITO,
 Ipomoea philomega,NOME_ACEITO,
 Ipomoea quamoclit,NOME_ACEITO,
 Ipomoea setifera,NOME_ACEITO,
 Ipomoea setosa,NOME_ACEITO,
-Ipomoea serpens,SINONIMO,Ipomoea serpens
+Ipomoea serpens,SINONIMO,Ipomoea maurandioides
 Ipomoea squamosa,NOME_ACEITO,
 Ipomoea subrevoluta,NOME_ACEITO,
 Ipomoea wrightii,NOME_ACEITO,
@@ -243,7 +243,7 @@ Tetralocularia pennellii,NOME_ACEITO,
 Costus arabicus,NOME_ACEITO,
 Crassula peduncularis,NOME_ACEITO,
 Cyclanthera hystrix,NOME_ACEITO,
-Elaterium amazonicum,SINONIMO,Elaterium amazonicum
+Elaterium amazonicum,SINONIMO,Not Specified
 Fevillea trilobata,NOME_ACEITO,
 Gurania bignoniacea,NOME_ACEITO,
 Gurania tricuspidata,NOME_ACEITO,
@@ -260,39 +260,39 @@ Bulbostylis junciformis,NOME_ACEITO,
 Bulbostylis juncoides,NOME_ACEITO,
 Bulbostylis sellowiana,NOME_ACEITO,
 Bulbostylis truncata,NOME_ACEITO,
-Calyptrocarya longifolia,SINONIMO,Calyptrocarya longifolia
+Calyptrocarya longifolia,SINONIMO,Calyptrocarya glomerulata
 Carex brasiliensis,NOME_ACEITO,
 Carex pseudocyperus,NOME_ACEITO,
-Cladium jamaicense,SINONIMO,Cladium jamaicense
+Cladium jamaicense,SINONIMO,Cladium mariscus
 Cyperus aggregatus,NOME_ACEITO,
 Cyperus amabilis,NOME_ACEITO,
 Cyperus articulatus,NOME_ACEITO,
-Cyperus aristatus,SINONIMO,Cyperus aristatus
+Cyperus aristatus,SINONIMO,Cyperus squarrosus
 Cyperus barrosianus,NOME_ACEITO,
 Cyperus berroi,NOME_ACEITO,
 Cyperus brevifolius,NOME_ACEITO,
-Cyperus cayennensis,SINONIMO,Cyperus cayennensis
-Cyperus celluloso-reticulatus,SINONIMO,Cyperus celluloso-reticulatus
+Cyperus cayennensis,SINONIMO,Cyperus aggregatus
+Cyperus celluloso-reticulatus,SINONIMO,Cyperus cellulosoreticulatus
 Cyperus chalaranthus,NOME_ACEITO,
 Cyperus compressus,NOME_ACEITO,
 Cyperus cornelii-ostenii,NOME_ACEITO,
 Cyperus corymbosus,NOME_ACEITO,
 Cyperus cuspidatus,NOME_ACEITO,
-Cyperus diffusus,SINONIMO,Cyperus diffusus
+Cyperus diffusus,SINONIMO,Cyperus laxus
 Cyperus digitatus,NOME_ACEITO,
 Cyperus distans,NOME_ACEITO,
 Cyperus eragrostis,NOME_ACEITO,
 Cyperus esculentus,NOME_ACEITO,
-Cyperus fistulosus,SINONIMO,Cyperus fistulosus
+Cyperus fistulosus,SINONIMO,Cyperus articulatus
 Cyperus gardneri,NOME_ACEITO,
 Cyperus giganteus,NOME_ACEITO,
 Cyperus haspan,NOME_ACEITO,
 Cyperus hermaphroditus,NOME_ACEITO,
 Cyperus imbricatus,NOME_ACEITO,
 Cyperus intricatus,NOME_ACEITO,
-Cyperus involucratus,SINONIMO,Cyperus involucratus
+Cyperus involucratus,SINONIMO,Cyperus alternifolius
 Cyperus iria,NOME_ACEITO,
-Cyperus laetus,SINONIMO,Cyperus laetus
+Cyperus laetus,SINONIMO,Cyperus rigens
 Cyperus lanceolatus,NOME_ACEITO,
 Cyperus laxus,NOME_ACEITO,
 Cyperus ligularis,NOME_ACEITO,
@@ -302,7 +302,7 @@ Cyperus mundtii,NOME_ACEITO,
 Cyperus obtusatus,NOME_ACEITO,
 Cyperus odoratus,NOME_ACEITO,
 Cyperus papyrus,NOME_ACEITO,
-Cyperus polystachyus,SINONIMO,Cyperus polystachyus
+Cyperus polystachyus,SINONIMO,Cyperus flavescens
 Cyperus prolixus,NOME_ACEITO,
 Cyperus reflexus,NOME_ACEITO,
 Cyperus rigens,NOME_ACEITO,
@@ -312,18 +312,18 @@ Cyperus surinamensis,NOME_ACEITO,
 Cyperus uncinulatus,NOME_ACEITO,
 Cyperus virens,NOME_ACEITO,
 Dialium guianense,NOME_ACEITO,
-Diplacrum longifolium,SINONIMO,Diplacrum longifolium
+Diplacrum longifolium,SINONIMO,Diplacrum capitatum
 Eleocharis acutangula,NOME_ACEITO,
 Eleocharis atropurpurea,NOME_ACEITO,
 Eleocharis barrosii,NOME_ACEITO,
 Eleocharis bonariensis,NOME_ACEITO,
 Eleocharis capillacea,NOME_ACEITO,
 Eleocharis debilis,NOME_ACEITO,
-Eleocharis elata,SINONIMO,Eleocharis elata
+Eleocharis elata,SINONIMO,Eleocharis plicarhachis
 Eleocharis elegans,NOME_ACEITO,
 Eleocharis elongata,NOME_ACEITO,
 Eleocharis filiculmis,NOME_ACEITO,
-Eleocharis fistulosa,SINONIMO,Eleocharis fistulosa
+Eleocharis fistulosa,SINONIMO,Eleocharis acutangula
 Eleocharis flavescens,NOME_ACEITO,
 Eleocharis geniculata,NOME_ACEITO,
 Eleocharis interstincta,NOME_ACEITO,
@@ -333,7 +333,7 @@ Eleocharis minima,NOME_ACEITO,
 Eleocharis montana,NOME_ACEITO,
 Eleocharis mutata,NOME_ACEITO,
 Eleocharis nana,NOME_ACEITO,
-Eleocharis nodulosa,SINONIMO,Eleocharis nodulosa
+Eleocharis nodulosa,SINONIMO,Eleocharis montana
 Eleocharis nudipes,NOME_ACEITO,
 Eleocharis radicans,NOME_ACEITO,
 Eleocharis retroflexa,NOME_ACEITO,
@@ -344,7 +344,7 @@ Fimbristylis autumnalis,NOME_ACEITO,
 Fimbristylis complanata,NOME_ACEITO,
 Fimbristylis cymosa,NOME_ACEITO,
 Fimbristylis dichotoma,NOME_ACEITO,
-Fimbristylis diphylla,SINONIMO,Fimbristylis diphylla
+Fimbristylis diphylla,SINONIMO,Fimbristylis dichotoma
 Fimbristylis miliacea,NOME_ACEITO,
 Fimbristylis spadicea,NOME_ACEITO,
 Fimbristylis squarrosa,NOME_ACEITO,
@@ -352,21 +352,21 @@ Fuirena incompleta,NOME_ACEITO,
 Fuirena robusta,NOME_ACEITO,
 Fuirena umbellata,NOME_ACEITO,
 Hyparrhenia rufa,NOME_ACEITO,
-Kyllinga odorata,SINONIMO,Kyllinga odorata
-Kyllinga pumila,SINONIMO,Kyllinga pumila
-Lipocarpha humboldtiana,SINONIMO,Lipocarpha humboldtiana
-Lipocarpha micrantha,SINONIMO,Lipocarpha micrantha
-Lipocarpha salzmanniana,SINONIMO,Lipocarpha salzmanniana
-Lipocarpha sellowiana,SINONIMO,Lipocarpha sellowiana
-Pycreus flavescens,SINONIMO,Pycreus flavescens
-Pycreus macrostachyos,SINONIMO,Pycreus macrostachyos
-Pycreus polystachyos,SINONIMO,Pycreus polystachyos
+Kyllinga odorata,SINONIMO,Cyperus sesquiflorus
+Kyllinga pumila,SINONIMO,Cyperus hortensis
+Lipocarpha humboldtiana,SINONIMO,Cyperus sellowianus
+Lipocarpha micrantha,SINONIMO,Cyperus subsquarrosus
+Lipocarpha salzmanniana,SINONIMO,Cyperus salzmannianus
+Lipocarpha sellowiana,SINONIMO,Cyperus sellowianus
+Pycreus flavescens,SINONIMO,Cyperus flavescens
+Pycreus macrostachyos,SINONIMO,Cyperus macrostachyos
+Pycreus polystachyos,SINONIMO,Cyperus polystachyos
 Rhynchospora barbata,NOME_ACEITO,
 Rhynchospora brittonii,NOME_ACEITO,
 Rhynchospora cephalotes,NOME_ACEITO,
 Rhynchospora contracta,NOME_ACEITO,
 Rhynchospora corymbosa,NOME_ACEITO,
-Rhynchospora cyperoides,SINONIMO,Rhynchospora cyperoides
+Rhynchospora cyperoides,SINONIMO,Rhynchospora holoschoenoides
 Rhynchospora gigantea,NOME_ACEITO,
 Rhynchospora holoschoenoides,NOME_ACEITO,
 Rhynchospora marisculus,NOME_ACEITO,
@@ -380,20 +380,20 @@ Rhynchospora tenuis,NOME_ACEITO,
 Rhynchospora trispicata,NOME_ACEITO,
 Rhynchospora velutina,NOME_ACEITO,
 Schoenoplectus californicus,NOME_ACEITO,
-Scirpus californicus,SINONIMO,Scirpus californicus
-Scirpus cubensis,SINONIMO,Scirpus cubensis
-Scirpus giganteus,SINONIMO,Scirpus giganteus
-Scirpus maritimus,SINONIMO,Scirpus maritimus
-Scirpus submersus,SINONIMO,Scirpus submersus
+Scirpus californicus,SINONIMO,Schoenoplectus californicus
+Scirpus cubensis,SINONIMO,Not Specified
+Scirpus giganteus,SINONIMO,Androtrichum trigynum
+Scirpus maritimus,SINONIMO,Bolboschoenus robustus
+Scirpus submersus,SINONIMO,Eleocharis confervoides
 Scleria bracteata,NOME_ACEITO,
 Scleria distans,NOME_ACEITO,
 Scleria hirtella,NOME_ACEITO,
-Scleria melaleuca,SINONIMO,Scleria melaleuca
+Scleria melaleuca,SINONIMO,Scleria gaertneri
 Scleria microcarpa,NOME_ACEITO,
 Scleria mitis,NOME_ACEITO,
-Scleria pterota,SINONIMO,Scleria pterota
+Scleria pterota,SINONIMO,Scleria gaertneri
 Scleria secans,NOME_ACEITO,
-Websteria confervoides,SINONIMO,Websteria confervoides
+Websteria confervoides,SINONIMO,Eleocharis confervoides
 Dioscorea marginata,NOME_ACEITO,
 Drosera communis,NOME_ACEITO,
 Drosera intermedia,NOME_ACEITO,
@@ -401,7 +401,7 @@ Elatine lindbergii,NOME_ACEITO,
 Equisetum giganteum,NOME_ACEITO,
 Agarista chlorantha,NOME_ACEITO,
 Gaylussacia brasiliensis,NOME_ACEITO,
-Eriocaulon angustifolium,SINONIMO,Eriocaulon angustifolium
+Eriocaulon angustifolium,SINONIMO,Eriocaulon aquatile
 Eriocaulon aquatile,NOME_ACEITO,
 Eriocaulon humboldtii,NOME_ACEITO,
 Eriocaulon magnificum,NOME_ACEITO,
@@ -417,14 +417,14 @@ Paepalanthus tortilis,NOME_ACEITO,
 Syngonanthus anomalus,NOME_ACEITO,
 Syngonanthus caulescens,NOME_ACEITO,
 Syngonanthus chrysanthus,NOME_ACEITO,
-Syngonanthus glandulosus,SINONIMO,Syngonanthus glandulosus
+Syngonanthus glandulosus,SINONIMO,Syngonanthus caulescens
 Syngonanthus gracilis,NOME_ACEITO,
 Syngonanthus oblongus,NOME_ACEITO,
-Syngonanthus xeranthemoides,SINONIMO,Syngonanthus xeranthemoides
+Syngonanthus xeranthemoides,SINONIMO,Comanthera xeranthemoides
 Tonina fluviatilis,NOME_ACEITO,
 Acalypha arvensis,NOME_ACEITO,
 Acalypha poiretii,NOME_ACEITO,
-Argythamnia heteropetala,SINONIMO,Argythamnia heteropetala
+Argythamnia heteropetala,SINONIMO,Caperonia heteropetala
 Astraea lobata,NOME_ACEITO,
 Caperonia castaneifolia,NOME_ACEITO,
 Caperonia palustris,NOME_ACEITO,
@@ -433,7 +433,7 @@ Dalechampia scandens,NOME_ACEITO,
 Dalechampia tiliifolia,NOME_ACEITO,
 Euphorbia prostrata,NOME_ACEITO,
 Euphorbia thymifolia,NOME_ACEITO,
-Sapium glandulatum,SINONIMO,Sapium glandulatum
+Sapium glandulatum,SINONIMO,Sapium glandulosum
 Tonina fluviatilis,NOME_ACEITO,
 Adesmia latifolia,NOME_ACEITO,
 Aeschynomene americana,NOME_ACEITO,
@@ -480,10 +480,10 @@ Erythrina crista-galli,NOME_ACEITO,
 Indigofera hirsuta,NOME_ACEITO,
 Indigofera lespedezioides,NOME_ACEITO,
 Indigofera sabulicola,NOME_ACEITO,
-Inga affinis,SINONIMO,Inga affinis
+Inga affinis,SINONIMO,Inga vera
 Inga marginata,NOME_ACEITO,
 Inga sessilis,NOME_ACEITO,
-Inga uruguensis,SINONIMO,Inga uruguensis
+Inga uruguensis,SINONIMO,Inga vera
 Lonchocarpus sericeus,NOME_ACEITO,
 Macrolobium multijugum,NOME_ACEITO,
 Macroptilium gracile,NOME_ACEITO,
@@ -497,7 +497,7 @@ Mimosa pigra,NOME_ACEITO,
 Mimosa pudica,NOME_ACEITO,
 Mimosa setosa,NOME_ACEITO,
 Neptunia oleracea,NOME_ACEITO,
-Neptunia prostrata,SINONIMO,Neptunia prostrata
+Neptunia prostrata,SINONIMO,Neptunia oleracea
 Rhynchosia minima,NOME_ACEITO,
 Senna corymbosa,NOME_ACEITO,
 Senna occidentalis,NOME_ACEITO,
@@ -509,7 +509,7 @@ Stylosanthes angustifolia,NOME_ACEITO,
 Stylosanthes gracilis,NOME_ACEITO,
 Stylosanthes guianensis,NOME_ACEITO,
 Stylosanthes viscosa,NOME_ACEITO,
-Tephrosia purpurea,SINONIMO,Tephrosia purpurea
+Tephrosia purpurea,SINONIMO,Tephrosia domingensis
 Teramnus volubilis,NOME_ACEITO,
 Vachellia farnesiana,NOME_ACEITO,
 Vigna juruana,NOME_ACEITO,
@@ -520,8 +520,8 @@ Zornia guanipensis,NOME_ACEITO,
 Zornia latifolia,NOME_ACEITO,
 Coutoubea ramosa,NOME_ACEITO,
 Curtia tenuifolia,NOME_ACEITO,
-Irlbachia alata,SINONIMO,Irlbachia alata
-Irlbachia purpurascens,SINONIMO,Irlbachia purpurascens
+Irlbachia alata,SINONIMO,Chelonanthus alatus
+Irlbachia purpurascens,SINONIMO,Chelonanthus purpurascens
 Schultesia benthamiana,NOME_ACEITO,
 Schultesia brachyptera,NOME_ACEITO,
 Schultesia guianensis,NOME_ACEITO,
@@ -530,7 +530,7 @@ Sinningia elatior,NOME_ACEITO,
 Schiekia orinocensis,NOME_ACEITO,
 Laurembergia tetrandra,NOME_ACEITO,
 Myriophyllum aquaticum,NOME_ACEITO,
-Myriophyllum elatinoides,SINONIMO,Myriophyllum elatinoides
+Myriophyllum elatinoides,SINONIMO,Myriophyllum quitense
 Proserpinaca palustris,NOME_ACEITO,
 Heliconia marginata,NOME_ACEITO,
 Heliconia psittacorum,NOME_ACEITO,
@@ -544,7 +544,7 @@ Najas conferta,NOME_ACEITO,
 Najas guadalupensis,NOME_ACEITO,
 Najas marina,NOME_ACEITO,
 Najas microcarpa,NOME_ACEITO,
-Najas microdon,SINONIMO,Najas microdon
+Najas microdon,SINONIMO,Najas guadalupensis
 Ottelia brasiliensis,NOME_ACEITO,
 Hydrolea elatior,NOME_ACEITO,
 Hydrolea spinosa,NOME_ACEITO,
@@ -561,12 +561,12 @@ Juncus acutus,NOME_ACEITO,
 Juncus bufonius,NOME_ACEITO,
 Juncus capillaceus,NOME_ACEITO,
 Juncus densiflorus,NOME_ACEITO,
-Juncus dichotomus,SINONIMO,Juncus dichotomus
-Juncus dombeyanus,SINONIMO,Juncus dombeyanus
+Juncus dichotomus,SINONIMO,Not Specified
+Juncus dombeyanus,SINONIMO,Juncus pallescens
 Juncus effusus,NOME_ACEITO,
 Juncus marginatus,NOME_ACEITO,
 Juncus microcephalus,NOME_ACEITO,
-Juncus sellowianus,SINONIMO,Juncus sellowianus
+Juncus sellowianus,SINONIMO,Juncus microcephalus
 Juncus scirpoides,NOME_ACEITO,
 Lilaea scilloides,NOME_ACEITO,
 Triglochin striata,NOME_ACEITO,
@@ -574,16 +574,16 @@ Hyptis atrorubens,NOME_ACEITO,
 Hyptis brevipes,NOME_ACEITO,
 Hyptis caespitosa,NOME_ACEITO,
 Hyptis dilatata,NOME_ACEITO,
-Hyptis fasciculata,SINONIMO,Hyptis fasciculata
+Hyptis fasciculata,SINONIMO,Condea undulata
 Hyptis lacustris,NOME_ACEITO,
 Hyptis lagenaria,NOME_ACEITO,
 Hyptis lappacea,NOME_ACEITO,
 Hyptis lorentziana,NOME_ACEITO,
-Hyptis mutabilis,SINONIMO,Hyptis mutabilis
+Hyptis mutabilis,SINONIMO,Cantinoa mutabilis
 Hyptis parkeri,NOME_ACEITO,
 Hyptis recurvata,NOME_ACEITO,
-Hyptis spicigera,SINONIMO,Hyptis spicigera
-Hyptis suaveolens,SINONIMO,Hyptis suaveolens
+Hyptis spicigera,SINONIMO,Cantinoa americana
+Hyptis suaveolens,SINONIMO,Mesosphaerum suaveolens
 Hyptis tetracephala,NOME_ACEITO,
 Marsypianthes chamaedrys,NOME_ACEITO,
 Ocimum campechianum,NOME_ACEITO,
@@ -602,7 +602,7 @@ Utricularia foliosa,NOME_ACEITO,
 Utricularia gibba,NOME_ACEITO,
 Utricularia guyanensis,NOME_ACEITO,
 Utricularia hydrocarpa,NOME_ACEITO,
-Utricularia inflata,SINONIMO,Utricularia inflata
+Utricularia inflata,SINONIMO,Utricularia breviscapa
 Utricularia juncea,NOME_ACEITO,
 Utricularia laciniata,NOME_ACEITO,
 Utricularia laxa,NOME_ACEITO,
@@ -625,7 +625,7 @@ Utricularia triloba,NOME_ACEITO,
 Utricularia warmingii,NOME_ACEITO,
 Lindernia crustacea,NOME_ACEITO,
 Lindernia diffusa,NOME_ACEITO,
-Lindernia microcalyx,SINONIMO,Lindernia microcalyx
+Lindernia microcalyx,SINONIMO,Not Specified
 Lindernia rotundifolia,NOME_ACEITO,
 Torenia thouarsii,NOME_ACEITO,
 Spigelia anthelmia,NOME_ACEITO,
@@ -642,7 +642,7 @@ Cuphea melvilla,NOME_ACEITO,
 Cuphea racemosa,NOME_ACEITO,
 Cuphea repens,NOME_ACEITO,
 Cuphea sessiliflora,NOME_ACEITO,
-Heimia myrtifolia,SINONIMO,Heimia myrtifolia
+Heimia myrtifolia,SINONIMO,Heimia apetala
 Lythrum hyssopifolia,NOME_ACEITO,
 Pleurophora anomala,NOME_ACEITO,
 Rotala mexicana,NOME_ACEITO,
@@ -663,9 +663,9 @@ Hibiscus sororius,NOME_ACEITO,
 Malachra radiata,NOME_ACEITO,
 Melochia arenosa,NOME_ACEITO,
 Melochia graminifolia,NOME_ACEITO,
-Melochia hirsuta,SINONIMO,Melochia hirsuta
+Melochia hirsuta,SINONIMO,Melochia villosa
 Melochia simplex,NOME_ACEITO,
-Melochia spicata,SINONIMO,Melochia spicata
+Melochia spicata,SINONIMO,Malva spicata
 Monteiroa ptarmicifolia,NOME_ACEITO,
 Pavonia angustifolia,NOME_ACEITO,
 Pavonia cancellata,NOME_ACEITO,
@@ -680,13 +680,13 @@ Sida spinosa,NOME_ACEITO,
 Sidastrum multiflorum,NOME_ACEITO,
 Triumfetta althaeoides,NOME_ACEITO,
 Urena lobata,NOME_ACEITO,
-Waltheria americana,SINONIMO,Waltheria americana
+Waltheria americana,SINONIMO,Waltheria indica
 Waltheria indica,NOME_ACEITO,
-Calathea capitata,SINONIMO,Calathea capitata
-Calathea comosa,SINONIMO,Calathea comosa
-Calathea lanata,SINONIMO,Calathea lanata
-Calathea loeseneri,SINONIMO,Calathea loeseneri
-Calathea micans,SINONIMO,Calathea micans
+Calathea capitata,SINONIMO,Goeppertia capitata
+Calathea comosa,SINONIMO,Goeppertia comosa
+Calathea lanata,SINONIMO,Goeppertia lanata
+Calathea loeseneri,SINONIMO,Goeppertia loeseneri
+Calathea micans,SINONIMO,Goeppertia micans
 Ischnosiphon polyphyllus,NOME_ACEITO,
 Thalia multiflora,NOME_ACEITO,
 Thalia geniculata,NOME_ACEITO,
@@ -697,8 +697,8 @@ Mayaca sellowiana,NOME_ACEITO,
 Aciotis acuminifolia,NOME_ACEITO,
 Aciotis ornata,NOME_ACEITO,
 Acisanthera alsinaefolia,NOME_ACEITO,
-Acisanthera fluitans,SINONIMO,Acisanthera fluitans
-Acisanthera limnobios,SINONIMO,Acisanthera limnobios
+Acisanthera fluitans,SINONIMO,Not Specified
+Acisanthera limnobios,SINONIMO,Noterophila limnobios
 Acisanthera variabilis,NOME_ACEITO,
 Cambessedesia hilariana,NOME_ACEITO,
 Clidemia capitellata,NOME_ACEITO,
@@ -706,7 +706,7 @@ Clidemia hirta,NOME_ACEITO,
 Comolia villosa,NOME_ACEITO,
 Leandra multiplinervis,NOME_ACEITO,
 Miconia chamissois,NOME_ACEITO,
-Microlepis oleifolia,SINONIMO,Microlepis oleifolia
+Microlepis oleifolia,SINONIMO,Pleroma oleifolium
 Microlicia myrtoidea,NOME_ACEITO,
 Pterolepis glomerata,NOME_ACEITO,
 Pterolepis repanda,NOME_ACEITO,
@@ -718,18 +718,18 @@ Rhynchanthera novemnervia,NOME_ACEITO,
 Rhynchanthera serrulata,NOME_ACEITO,
 Rhynchanthera verbenoides,NOME_ACEITO,
 Tibouchina aspera,NOME_ACEITO,
-Tibouchina asperior,SINONIMO,Tibouchina asperior
+Tibouchina asperior,SINONIMO,Pleroma asperior
 Tibouchina cerastifolia,NOME_ACEITO,
 Tibouchina cisplatensis,NOME_ACEITO,
-Tibouchina gracilis,SINONIMO,Tibouchina gracilis
+Tibouchina gracilis,SINONIMO,Chaetogastra gracilis
 Tibouchina herbacea,NOME_ACEITO,
 Tibouchina sebastianopolitana,NOME_ACEITO,
-Tibouchina semidecandra,SINONIMO,Tibouchina semidecandra
-Tibouchina trichopoda,SINONIMO,Tibouchina trichopoda
-Tibouchina urceolaris,SINONIMO,Tibouchina urceolaris
+Tibouchina semidecandra,SINONIMO,Pleroma semidecandrum
+Tibouchina trichopoda,SINONIMO,Pleroma trichopodum
+Tibouchina urceolaris,SINONIMO,Pleroma urceolare
 Cissampelos andromorpha,NOME_ACEITO,
 Cissampelos glaberrima,NOME_ACEITO,
-Odontocarya arifolia,SINONIMO,Odontocarya arifolia
+Odontocarya arifolia,SINONIMO,Odontocarya membranacea
 Odontocarya tamoides,NOME_ACEITO,
 Nymphoides grayana,NOME_ACEITO,
 Nymphoides humboldtiana,NOME_ACEITO,
@@ -784,14 +784,14 @@ Ludwigia rigida,NOME_ACEITO,
 Ludwigia sericea,NOME_ACEITO,
 Ludwigia tomentosa,NOME_ACEITO,
 Ludwigia torulosa,NOME_ACEITO,
-Ludwigia uruguayensis,SINONIMO,Ludwigia uruguayensis
+Ludwigia uruguayensis,SINONIMO,Ludwigia hexapetala
 Cleistes gracilis,NOME_ACEITO,
 Cyrtopodium paludicolum,NOME_ACEITO,
 Epidendrum dendrobioides,NOME_ACEITO,
-Erythrodes pumila,SINONIMO,Erythrodes pumila
+Erythrodes pumila,SINONIMO,Aspidogyne pumila
 Eulophia alta,NOME_ACEITO,
 Habenaria aricaensis,NOME_ACEITO,
-Habenaria brachyphyton,SINONIMO,Habenaria brachyphyton
+Habenaria brachyphyton,SINONIMO,Habenaria parviflora
 Habenaria bractescens,NOME_ACEITO,
 Habenaria inconspicua,NOME_ACEITO,
 Habenaria johannensis,NOME_ACEITO,
@@ -800,8 +800,8 @@ Habenaria nuda,NOME_ACEITO,
 Habenaria parviflora,NOME_ACEITO,
 Habenaria pratensis,NOME_ACEITO,
 Habenaria repens,NOME_ACEITO,
-Habenaria riedelii,SINONIMO,Habenaria riedelii
-Habenaria vaupellii,SINONIMO,Habenaria vaupellii
+Habenaria riedelii,SINONIMO,Habenaria warmingii
+Habenaria vaupellii,SINONIMO,Habenaria johannensis
 Buchnera palustris,NOME_ACEITO,
 Buchnera rosea,NOME_ACEITO,
 Melasma melampyroides,NOME_ACEITO,
@@ -818,7 +818,7 @@ Phytolacca thyrsiflora,NOME_ACEITO,
 Piper caldense,NOME_ACEITO,
 Piper fuligineum,NOME_ACEITO,
 Achetaria ocymoides,NOME_ACEITO,
-Angelonia gardneri,SINONIMO,Angelonia gardneri
+Angelonia gardneri,SINONIMO,Angelonia salicariifolia
 Bacopa aquatica,NOME_ACEITO,
 Bacopa arenaria,NOME_ACEITO,
 Bacopa egensis,NOME_ACEITO,
@@ -826,7 +826,7 @@ Bacopa lanigera,NOME_ACEITO,
 Bacopa monnieri,NOME_ACEITO,
 Bacopa rotundifolia,NOME_ACEITO,
 Bacopa salzmannii,NOME_ACEITO,
-Bacopa serpylloides,SINONIMO,Bacopa serpylloides
+Bacopa serpylloides,SINONIMO,Mecardonia serpylloides
 Bacopa stricta,NOME_ACEITO,
 Callitriche deflexa,NOME_ACEITO,
 Callitriche rimosa,NOME_ACEITO,
@@ -850,11 +850,11 @@ Anthephora hermaphrodita,NOME_ACEITO,
 Axonopus brasiliensis,NOME_ACEITO,
 Axonopus leptostachyus,NOME_ACEITO,
 Axonopus purpusii,NOME_ACEITO,
-Bambusa trinii,SINONIMO,Bambusa trinii
-Brachiaria brizantha,SINONIMO,Brachiaria brizantha
-Brachiaria decumbens,SINONIMO,Brachiaria decumbens
-Brachiaria mutica,SINONIMO,Brachiaria mutica
-Brachiaria plantaginea,SINONIMO,Brachiaria plantaginea
+Bambusa trinii,SINONIMO,Guadua trinii
+Brachiaria brizantha,SINONIMO,Urochloa brizantha
+Brachiaria decumbens,SINONIMO,Urochloa decumbens
+Brachiaria mutica,SINONIMO,Urochloa mutica
+Brachiaria plantaginea,SINONIMO,Urochloa plantaginea
 Cenchrus echinatus,NOME_ACEITO,
 Cenchrus purpureus,NOME_ACEITO,
 Chloris barbata,NOME_ACEITO,
@@ -890,9 +890,9 @@ Ischaemum guianense,NOME_ACEITO,
 Ischaemum minus,NOME_ACEITO,
 Lasiacis procerrima,NOME_ACEITO,
 Leptochloa virgata,NOME_ACEITO,
-Leptocoryphium lanatum,SINONIMO,Leptocoryphium lanatum
+Leptocoryphium lanatum,SINONIMO,Anthaenantia lanata
 Luziola bahiensis,NOME_ACEITO,
-Luziola brasiliana,SINONIMO,Luziola brasiliana
+Luziola brasiliana,SINONIMO,Luziola peruviana
 Luziola fragilis,NOME_ACEITO,
 Luziola peruviana,NOME_ACEITO,
 Luziola spruceana,NOME_ACEITO,
@@ -908,25 +908,25 @@ Oryza sativa,NOME_ACEITO,
 Otachyrium succisum,NOME_ACEITO,
 Otachyrium versicolor,NOME_ACEITO,
 Panicum aquaticum,NOME_ACEITO,
-Panicum boliviense,SINONIMO,Panicum boliviense
+Panicum boliviense,SINONIMO,Not Specified
 Panicum dichotomiflorum,NOME_ACEITO,
-Panicum elephantipes,SINONIMO,Panicum elephantipes
-Panicum grande,SINONIMO,Panicum grande
-Panicum grumosum,SINONIMO,Panicum grumosum
-Panicum helobium,SINONIMO,Panicum helobium
-Panicum laxum,SINONIMO,Panicum laxum
-Panicum maximum,SINONIMO,Panicum maximum
-Panicum mertensii,SINONIMO,Panicum mertensii
-Panicum milleflorum,SINONIMO,Panicum milleflorum
-Panicum parvifolium,SINONIMO,Panicum parvifolium
-Panicum prionitis,SINONIMO,Panicum prionitis
+Panicum elephantipes,SINONIMO,Louisiella elephantipes
+Panicum grande,SINONIMO,Aconisia grandis
+Panicum grumosum,SINONIMO,Hymenachne grumosa
+Panicum helobium,SINONIMO,Trichanthecium schwackeanum
+Panicum laxum,SINONIMO,Steinchisma laxum
+Panicum maximum,SINONIMO,Megathyrsus maximus
+Panicum mertensii,SINONIMO,Stephostachys mertensii
+Panicum milleflorum,SINONIMO,Not Specified
+Panicum parvifolium,SINONIMO,Trichanthecium parvifolium
+Panicum prionitis,SINONIMO,Coleataenia prionitis
 Panicum repens,NOME_ACEITO,
-Panicum rivulare,SINONIMO,Panicum rivulare
-Panicum sabulorum,SINONIMO,Panicum sabulorum
-Panicum schwackeanum,SINONIMO,Panicum schwackeanum
+Panicum rivulare,SINONIMO,Hymenachne pernambucensis
+Panicum sabulorum,SINONIMO,Dichanthelium sabulorum
+Panicum schwackeanum,SINONIMO,Trichanthecium schwackeanum
 Paratheria prostrata,NOME_ACEITO,
 Pariana campestris,NOME_ACEITO,
-Paspalidium paludivagum,SINONIMO,Paspalidium paludivagum
+Paspalidium paludivagum,SINONIMO,Paspalidium geminatum
 Paspalum acuminatum,NOME_ACEITO,
 Paspalum boscianum,NOME_ACEITO,
 Paspalum conjugatum,NOME_ACEITO,
@@ -940,6 +940,7 @@ Paspalum glaucescens,NOME_ACEITO,
 Paspalum ligulare,NOME_ACEITO,
 Paspalum melanospermum,NOME_ACEITO,
 Paspalum millegrana,NOME_ACEITO,
+Paspalum morichalense,NOME_ACEITO,
 Paspalum orbiculatum,NOME_ACEITO,
 Paspalum pulchellum,NOME_ACEITO,
 Paspalum pumilum,NOME_ACEITO,
@@ -948,8 +949,8 @@ Paspalum trichophyllum,NOME_ACEITO,
 Paspalum vaginatum,NOME_ACEITO,
 Paspalum virgatum,NOME_ACEITO,
 Paspalum wrightii,NOME_ACEITO,
-Pennisetum purpureum,SINONIMO,Pennisetum purpureum
-Poidium calotheca,SINONIMO,Poidium calotheca
+Pennisetum purpureum,SINONIMO,Cenchrus purpureus
+Poidium calotheca,SINONIMO,Chascolytrum calotheca
 Polypogon elongatus,NOME_ACEITO,
 Raddiella esenbeckii,NOME_ACEITO,
 Rhytachne rottboellioides,NOME_ACEITO,
