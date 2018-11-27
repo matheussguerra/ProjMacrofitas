@@ -123,8 +123,12 @@ def writeNotFoundOutput(searchTerm, notFoundPath='../data/notFoundSPLK.csv'):
 	outputLocation.write(searchTerm)
 
 if __name__ == '__main__':
-	with open('../data/ListaMacrofitasResult.csv', 'r') as file:
+	with open('../data/floraDoBrasil.csv', 'r') as file:
 		lines = file.readlines()
 
 		for line in lines:
-			getData(line)
+			plant = line.split(',') 
+			if plant[1] == 'SINONIMO':
+				getData(plant[2].strip())
+			else:
+				getData(plant[0].strip())
