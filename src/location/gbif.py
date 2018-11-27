@@ -7,36 +7,42 @@ def getLocation(sciName, outputPath):
     response_json = response.json()["results"]
 
     for result in response_json:
-        name_splited = result['scientificName'].encode('utf8').split()
-        scientificName = "{} {}".format(name_splited[0], name_splited[1])
-        if scientificName == sciName:
-            try:
-                municipality =  result['municipality'].encode('utf8')
-            except:
-                municipality = ''
-            try:
-                state = result['stateProvince'].encode('utf8')
-            except:
-                state = ''
 
-            try:
-                country = result['country'].encode('utf8')
-            except:
-                country = ''
-            try:
-                latitude = result['decimalLatitude']
-                longitude = result['decimalLongitude']
-            except:
-                latitude = ''
-                longitude = ''
-
-            try:
-                date = '{}/{}/{}'.format(result['day'], result['month'], result['year'])
-
-            except:
-                date = ''
+        scientificName, municipality, state, country, latitude, longitude, date = parseResult(result, sciName)
 
         writeOutput(outputPath, '{},{},{},{},{},{},{}'.format(scientificName, municipality, state, country, latitude, longitude, date))
+
+def parseResult(result, sciName):
+    name_splited = result['scientificName'].encode('utf8').split()
+    scientificName = "{} {}".format(name_splited[0], name_splited[1])
+    municipality, state, country, latitude, longitude, date = "", "", "", "", "", ""
+    if scientificName == sciName:
+        try:
+            municipality =  result['municipality'].encode('utf8')
+        except:
+            municipality = ''
+        try:
+            state = result['stateProvince'].encode('utf8')
+        except:
+            state = ''
+
+        try:
+            country = result['country'].encode('utf8')
+        except:
+            country = ''
+        try:
+            latitude = result['decimalLatitude']
+            longitude = result['decimalLongitude']
+        except:
+            latitude = ''
+            longitude = ''
+        try:
+            date = '{}/{}/{}'.format(result['day'], result['month'], result['year'])
+
+        except:
+            date = ''
+
+    return scientificName, municipality, state, country, latitude, longitude, date
 
 
 def writeOutput(path ,line):
