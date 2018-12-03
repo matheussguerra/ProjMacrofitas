@@ -116,6 +116,7 @@ def writeOutput(registries, outputPath='../data/speciesLink.csv', notFoundPath='
         outputLocation = open(outputPath, 'a')
     except:
         outputLocation = open(outputPath, 'w')
+        outputLocation.write("scientificName,municipality,state,country,latitude,longitude,date")
 
     for i in registries:
         outputLocation.write(i + "\n")
