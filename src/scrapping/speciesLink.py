@@ -9,20 +9,6 @@ import os
 
 urlSearchTemplate = "http://www.splink.org.br/mod_perl/searchHint?ts_genus={}&offset={}"
 
-def toUnicode(s):
-    if type(s) is unicode:
-        return s
-    elif type(s) is str:
-        d = chardet.detect(s)
-        (cs, conf) = (d['encoding'], d['confidence'])
-        if conf > 0.80:
-            try:
-                return s.decode( cs, errors = 'replace' )
-            except Exception as ex:
-                pass
-    # force and return only ascii subset
-    return unicode(''.join( [ i if ord(i) < 128 else ' ' for i in s ]))
-
 def getData(searchTerm, offset=0, inputFile='../data/ListaMacrofitasResult.csv'):
 
 	print 'Searching {},offset = {}'.format(searchTerm, offset)
@@ -56,17 +42,13 @@ def getData(searchTerm, offset=0, inputFile='../data/ListaMacrofitasResult.csv')
 			max_registries = int(hints[2].text)
 
 			for div in divs[1:]:
-				print div
-				print "\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 				scientificName, municipality, state, country, latitude, longitude, date = parseDiv(div)
-
 				registries.append('{},{},{},{},{},{},{}'.format(scientificName, municipality, state, country, latitude, longitude, date))
 
 			writeOutput(registries)
 
 			if(offset < max_registries):
 				getData(searchTerm, offset)
-
 	else:
 		response.raise_for_status()
 
@@ -123,7 +105,7 @@ def writeNotFoundOutput(searchTerm, notFoundPath='../data/notFoundSPLK.csv'):
 	except:
 		outputLocation = open(notFoundPath, 'w')
 
-	outputLocation.write(searchTerm)
+	outputLocation.write(searchTerm + '\n')
 
 if __name__ == '__main__':
 	with open('../data/floraDoBrasil.csv', 'r') as file:
