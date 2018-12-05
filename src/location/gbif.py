@@ -1,16 +1,22 @@
 import requests
 
-def getLocation(sciName, outputPath):
+def getLocation(sciName, outputPath, writeOutputFlag=True):
     urlTemplate = 'http://api.gbif.org/v1/occurrence/search?scientificName={}'
 
     response = requests.get(urlTemplate.format(sciName))
     response_json = response.json()["results"]
+    resultsParsed = []
 
     for result in response_json:
 
         scientificName, municipality, state, country, latitude, longitude, date = parseResult(result, sciName)
+        oneResult = [scientificName, municipality, state, country, latitude, longitude, date]
+        resultsParsed.append(oneResult)
 
-        writeOutput(outputPath, '{},{},{},{},{},{},{}'.format(scientificName, municipality, state, country, latitude, longitude, date))
+        if writeOutputFlag:
+            writeOutput(outputPath, '{},{},{},{},{},{},{}'.format(scientificName, municipality, state, country, latitude, longitude, date))
+
+    return resultsParsed
 
 def parseResult(result, sciName):
     name_splited = result['scientificName'].encode('utf8').split()
@@ -42,7 +48,7 @@ def parseResult(result, sciName):
         except:
             date = ''
 
-    return scientificName, municipality, state, country, latitude, longitude, date
+    return scientificName.decode('utf-8'), municipality.decode('utf-8'), state.decode('utf-8'), country.decode('utf-8'), latitude, longitude, date
 
 
 def writeOutput(path ,line):

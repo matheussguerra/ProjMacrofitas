@@ -21,9 +21,10 @@ def getData(searchTerm='', allDataset=False, inputFile='../data/ListaMacrofitasR
 		getManyEntries(urlRequestTemplate, inputFile, outputPath, notFoundPath)
 	# Obtenção de informações da planta especificada
 	else:
-		getOneEntry(urlRequestTemplate, searchTerm, outputPath, notFoundPath)
+		getOneEntry(searchTerm, outputPath, notFoundPath)
 
-def getOneEntry(urlRequestTemplate, searchTerm, outputPath, notFoundPath):
+def getOneEntry( searchTerm, outputPath, notFoundPath):
+	urlRequestTemplate="http://servicos.jbrj.gov.br/flora/taxon/{}"
 	if(searchTerm == ''):
 		# Caso o nome da planta (searchTerm) não for especificado, retorna uma exceção
 		raise BaseException
@@ -37,12 +38,12 @@ def getOneEntry(urlRequestTemplate, searchTerm, outputPath, notFoundPath):
 		unicode_queryResult = response.json()[u'result']
 	except:
 		# Caso não houver resposta, é registrado em um arquivo
-		parseAndWriteJSON(searchTerm, notFoundPath, isNone=True)
+		parseAndWriteJSON(searchTerm, notFoundPath, isNone=True, writeOutput=False)
 		return 0
 	# Obtém o resultado convertido em JSON
 	queryResult = json.dumps(unicode_queryResult,indent=4, ensure_ascii=False)
 	# Método para retirar informações do JSON e registrá-las
-	parseAndWriteJSON(queryResult, outputPath)
+	return parseAndWriteJSON(queryResult, outputPath, writeOutput=False)
 
 def getManyEntries(urlRequestTemplate, inputFile, outputPath, notFoundPath):
 	results = []
@@ -68,10 +69,11 @@ def getManyEntries(urlRequestTemplate, inputFile, outputPath, notFoundPath):
 			# Método é chamado para extração de informações do JSON e é registrado
 			parseAndWriteJSON(queryResult, outputPath)
 
-def parseAndWriteJSON(json_data, outputPath, isNone=False):
+def parseAndWriteJSON(json_data, outputPath, isNone=False, writeOutput=True):
 	# Abre o arquivo de saída para registro de informações
-	outputFile = open(outputPath,'a')
-	output = csv.writer(outputFile)
+	if writeOutput:
+		outputFile = open(outputPath,'a')
+		output = csv.writer(outputFile)
 
 	if isNone:
 		# Caso a planta não foi encontrada, é registrado como : "{Nome científico}, Not Found"
@@ -107,7 +109,9 @@ def parseAndWriteJSON(json_data, outputPath, isNone=False):
 		name = json_data["scientificname"].split()[0] + ' ' + json_data["scientificname"].split()[1]
 
 	# Dados são registrados
-	output.writerow((name, status, accepted_name))
+	if writeOutput:
+		output.writerow((name, status, accepted_name))
+	return name, status, accepted_name
 
 def main():
 	getData(allDataset=True)
