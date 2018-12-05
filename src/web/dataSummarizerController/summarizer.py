@@ -7,7 +7,17 @@ summarizer_blueprint = Blueprint('summarizer', __name__)
 # Tabela 1
 @summarizer_blueprint.route('/comparacao/', methods=['GET'])
 def comparacao():
-    data = open('web/data/Tabela1.csv', 'r',)
+    content = getContent('web/data/Tabela1.csv')
+    return render_template('data/firstTable.html', data=content)
+
+@summarizer_blueprint.route('/localizacao/', methods=['GET'])
+def localizacao():
+    content = getContent('web/data/Tabela4.csv')
+    return render_template('data/thirdTable.html', data=content)
+
+
+def getContent(filePath):
+    data = open(filePath, 'r',)
 
     dataLines = data.readlines()
     content = []
@@ -16,4 +26,5 @@ def comparacao():
         dataContent = line.split(',')
         dataContentProcessed = [element.rstrip().decode('utf-8') for element in dataContent]
         content.append(dataContentProcessed)
-    return render_template('data/firstTable.html', data=content)
+
+    return content

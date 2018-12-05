@@ -2,8 +2,52 @@
 
 {% block body %}
 
-<div class="container" style="padding-top: 50px;">
+<style>
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  text-align: center;
+}
+a:hover {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  text-align: center;
+}
+</style>
 
+<div class="container" style="padding-top: 50px;">
+<div class="row">
+    <div class="col-md-4">
+        <a href="/comparacao" class="button">
+            <div class="card bg-light mb-3" style="width:100%;">
+                <div class="card-header">Tabela Comparativa</div>
+                <div class="card-body">
+                <p class="card-text">Tabela comparativa entre nomes de plantas dos sites Flora do Brasil e SpeciesLink <br></p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="#" class="button">
+            <div class="card bg-light mb-3" style="width:100%;">
+                <div class="card-header">Tabela Completa</div>
+                <div class="card-body">
+                <p class="card-text">Tabela contendo as informações gerais de todas as plantas como lorem ipsun lorem ipsun<br></p>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="/comparacao" class="button">
+            <div class="card bg-light mb-3" style="width:100%;">
+            <div class="card-header">Tabela de Lozalicações</div>
+            <div class="card-body">
+              <p class="card-text">Tabela contendo o nome da planta, cidade, estado, país e coordenadas geográficas.</p>
+            </div>
+          </div>
+        </a>
+    </div>
+</div>
 </div>
 
 {% endblock %}

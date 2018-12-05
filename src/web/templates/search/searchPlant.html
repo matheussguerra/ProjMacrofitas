@@ -1,6 +1,15 @@
 {% extends 'layout.html' %}
+{% from 'includes/_formhelpers.html' import render_field %}
 {% block body %}
 
+<div class="container">
+	<form method="POST" action="">
+		<div class="form-group">
+			{{ render_field(form.plant, class_="form-control") }}
+		</div>
 
+        <p><input type="submit" class="btn btn-primary" value="Buscar"></p>
 
+	</form>
+</div>
 {% endblock %}
