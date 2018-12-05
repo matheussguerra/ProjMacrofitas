@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% from 'includes/_formhelpers.html' import render_field %}
+{% block body %}
+
+<div class="container">
+	<form method="POST" enctype="multipart/form-data" action="">
+		<div class="form-group">
+			{{ render_field(form.arquivo, class_="form-control") }}
+		</div>
+
+        <p><input type="submit" class="btn btn-primary" value="Buscar"></p>
+
+	</form>
+</div>
+{% endblock %}

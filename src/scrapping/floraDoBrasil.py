@@ -12,7 +12,7 @@ import csv
 
 # Método principal. Obtenção de informações de todas as plantas de um arquivo de entrada
 # Obtenção de informações de uma planta específica
-def getData(searchTerm='', allDataset=False, inputFile='../data/ListaMacrofitasResult.csv', outputPath='../data/floraDoBrasil.csv', notFoundPath='../data/notFoundFDB.csv'):
+def getData(searchTerm='', allDataset=False, inputFile='data/ListaMacrofitasResult.csv', outputPath='data/floraDoBrasil.csv', notFoundPath='data/notFoundFDB.csv'):
 	# URL Modelo para pesquisas de plantas
 	urlRequestTemplate = "http://servicos.jbrj.gov.br/flora/taxon/{}"
 
@@ -112,9 +112,3 @@ def parseAndWriteJSON(json_data, outputPath, isNone=False, writeOutput=True):
 	if writeOutput:
 		output.writerow((name, status, accepted_name))
 	return name, status, accepted_name
-
-def main():
-	getData(allDataset=True)
-
-if __name__ == '__main__':
-	main()

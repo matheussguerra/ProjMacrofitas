@@ -23,7 +23,7 @@ def getOneEntry(searchTerm):
     else:
         return 'Bad Response!'
 
-def getAllEntries(inputPath='../data/ListaMacrofitasResult.csv', outputPath='../data/plantList.csv', notFoundPath = '../data/notFoundPlantList.csv'):
+def getAllEntries(inputPath='data/ListaMacrofitasResult.csv', outputPath='data/plantList.csv', notFoundPath = 'data/notFoundPlantList.csv'):
     #output = csv.writer(outputFile)
     #allResponses = []
     outputFile = open(outputPath, 'a')
@@ -113,7 +113,7 @@ def getSynonymous(soup):
     species = soup('h1')[1]('span')[3]('i')[1].text
     return str(genus) + ' ' + str(species)
 
-def reprocessEntries(inputFile='toProcess.txt', outputPath='../data/plantList.csv', notFoundPath = '../data/notFoundPlantList.csv'):
+def reprocessEntries(inputFile='toProcess.txt', outputPath='data/plantList.csv', notFoundPath = 'data/notFoundPlantList.csv'):
     outputFile = open(outputPath, 'a')
     with open(inputFile) as input:
         lines = input.readlines()
