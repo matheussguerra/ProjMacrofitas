@@ -31,7 +31,7 @@ O principal objetivo do processo de encerramento é avaliar se os objetivos plan
 
 ### 3. Produtos entregues
 <div id='id3' />
-Aplicação para validação e localização de macrófitas aquaticas na América do Sul
+Aplicação para validação de nomes e localização de macrófitas aquaticas na América do Sul
 
 ### 4. Classificação do aceite
 <div id='id4' />
