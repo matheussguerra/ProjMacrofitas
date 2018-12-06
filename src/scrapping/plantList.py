@@ -1,6 +1,8 @@
  # -*- coding: utf-8 -*-
 
-from BeautifulSoup import BeautifulSoup
+from bs4 import BeautifulSoup
+from bs4.dammit import EncodingDetector
+
 import requests
 import csv
 import os
@@ -9,74 +11,104 @@ urlSearchTemplate = "http://www.theplantlist.org/tpl1.1/search?q={}"
 newUrl = "http://www.theplantlist.org{}"
 
 def getOneEntry(searchTerm):
-    response = requests.get(urlSearchTemplate.format(searchTerm))
-    raw_http = response.text
+    searchTerm = searchTerm.replace('\n', '')
+    response = requests.get(urlSearchTemplate.format(searchTerm.replace(' ', '%20')))
 
     if response.ok:
-        raw_http = response.text
-        soup = BeautifulSoup(raw_http)
+        http_encoding = response.encoding if 'charset' in response.headers.get('content-type', '').lower() else None
+        html_encoding = EncodingDetector.find_declared_encoding(response.content, is_html=True)
+        encoding = html_encoding or http_encoding
+        soup = BeautifulSoup(response.content, 'lxml', from_encoding=encoding)
 
-        isAccepted = verifyAccepted(soup)
-        synonymous = getSynonymous(soup)
+        result = processHtml(soup, searchTerm)
 
-        return isAccepted, synonymous
+        if ("/tpl" in result[0]):
+           result = getOneEntry2(result[1], result[0])
+
+        print result
+        return result
+
+
     else:
         return 'Bad Response!'
 
-def getAllEntries(inputPath='../data/ListaMacrofitasResult.csv', outputPath='../data/plantList.csv', notFoundPath = '../data/notFoundPlantList.csv'):
-    #output = csv.writer(outputFile)
-    #allResponses = []
-    outputFile = open(outputPath, 'a')
+def getOneEntry2(searchTerm, searchTermAbsolute):
+    response = requests.get(newUrl.format(searchTermAbsolute.replace(' ', '%20')))
+
+    if response.ok:
+        http_encoding = response.encoding if 'charset' in response.headers.get('content-type', '').lower() else None
+        html_encoding = EncodingDetector.find_declared_encoding(response.content, is_html=True)
+        encoding = html_encoding or http_encoding
+        soup = BeautifulSoup(response.content, 'lxml', from_encoding=encoding)
+
+        result = processHtml(soup, searchTerm)
+        return result
+
+    else:
+        return 'Bad Response!'
+
+
+def getAllEntries(inputPath = '../data/ListaMacrofitasResult.csv'):
     with open(inputPath) as input:
         lines = input.readlines()
 
-        for line in lines:
-            line = line.replace('\n', '')
-            link = urlSearchTemplate.format(line).replace(' ', "%20")
-            print link
-            response = requests.get(urlSearchTemplate.format(link))
+    for line in lines:
+        searchTerm = line.split(',')[0]
+        getOneEntry(searchTerm)
 
-            if response.ok:
-                link = link.replace("\n", "")
-                os.system('wget -q -O aux.txt "' + link +  '"')
-                web_page = open('aux.txt', 'r')
-                raw_http = web_page.read()
+    input.close()
 
-                soup = BeautifulSoup(str(raw_http))
-                web_page.close()
 
-                title = str(soup('title')[0])
+def processHtml(soup, line):
+    title = str(soup('title')[0])
+    result = ""
 
-                if "No results" in title:
-                    with open(notFoundPath, 'a') as notFound:
-                        notFound.write(line + ' not found.\n')
+    if "No results" in title:
+        result = line + ' not found.\n'
+        output = open('../data/notFoundPlantList.csv', 'a')
+        output.write(result)
+        output.close()
+        result = 'none'
 
-                elif "Search results" in title:
-                    identifier,genus,species = getCorrectLink(soup)
-                    file = open('toProcess.txt', 'a')
-                    file.write(identifier + ',' + genus + ' ' + species +'\n')
+    elif "Search results" in title:
+        identifier,genus,species = getCorrectLink(soup)
 
-                else:
-                    status = verifyStatus(soup)
-                    if status == 'SINONIMO':
-                        synonymous = getSynonymous(soup)
-                        response = line + ',' + status + ',' + synonymous
-                        response = response.replace('\n', '')
+        if identifier != 'none':
+            result = identifier, (genus + ' ' + species)
+            #file = open('toProcess.txt', 'a')
+            #file.write(identifier + ',' + genus + ' ' + species + '\n')
+            #file.close()
+        else:
+            result = line + ' not accepted names.' '\n'
+            output = open('../data/notFoundPlantList.csv', 'a')
+            output.write(result)
+            output.close()
+            result = 'none'
 
-                    elif status == 'NOME_ACEITO':
-                        response = line + ',' + status + ',' + line
-                        response = response.replace('\n', '')
+    else:
+        status = verifyStatus(soup)
 
-                    else:
-                        response = line + ',' + status
+        if status == 'SINONIMO':
+            synonymous = getSynonymous(soup)
+            result = line + ',' + status + ',' + synonymous
+            result = result.replace('\n', '')
 
-                    outputFile.write(response + '\n')
-    outputFile.close()
-    file.close()
+        elif status == 'NOME_ACEITO':
+            result = line + ',' + status + ',' + line
+            result = result.replace('\n', '')
+
+        else:
+            result = line + ',' + status
+
+        output = open('../data/plantList.csv', 'a')
+        output.write(result + '\n')
+        output.close()
+
+    return result
+
 
 
 def getCorrectLink(soup):
-    newName = ""
     table = soup('table')
     trs = table[0]('tr')
     identifier = 'none'
@@ -92,7 +124,7 @@ def getCorrectLink(soup):
             identifier = identifier['href']
             break
         else:
-            indetifier = 'none'
+            identifier = 'none'
 
     return identifier,genus,species
 
@@ -113,56 +145,13 @@ def getSynonymous(soup):
     species = soup('h1')[1]('span')[3]('i')[1].text
     return str(genus) + ' ' + str(species)
 
-def reprocessEntries(inputFile='toProcess.txt', outputPath='../data/plantList.csv', notFoundPath = '../data/notFoundPlantList.csv'):
-    outputFile = open(outputPath, 'a')
-    with open(inputFile) as input:
-        lines = input.readlines()
-        for line in lines:
-            line = line.replace('\n', '')
-            newLine = line.split(',')
-            if newLine[0] != 'none':
-                link = newUrl.format(newLine[0])
-                print link
 
-                web_page = open('aux.txt', 'r')
-                raw_http = web_page.read()
-
-                soup = BeautifulSoup(str(raw_http))
-                web_page.close()
-
-                title = str(soup('title')[0])
-
-                if "No results" in title:
-                    with open(notFoundPath, 'a') as notFound:
-                        notFound.write(line + ' not found.\n')
-
-                elif "Search results" in title:
-                    identifier,genus,species = getCorrectLink(soup)
-                    file = open('toProcess.txt', 'a')
-                    file.write(identifier + ',' + genus + ' ' + species + '\n')
-
-                else:
-                    status = verifyStatus(soup)
-                    if status == 'SYNONYM':
-                        synonymous = getSynonymous(soup)
-                        response = newLine[1] + ',' + status + ',' + synonymous
-                        response = response.replace('\n', '')
-
-                    elif status == 'ACCEPTED':
-                        response = newLine[1] + ',' + status + ',' + newLine[1]
-                        response = response.replace('\n', '')
-
-                    else:
-                        response = newLine[1] + ',' + status
-
-                    outputFile.write(response + '\n')
-    outputFile.close()
-    file.close()
-    reprocessEntries()
 
 
 def main():
-    getAllEntries()
+    #getAllEntries()
+    getOneEntry('Dicliptera ciliaris')
+
 
 if __name__ == '__main__':
     main()
