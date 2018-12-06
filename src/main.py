@@ -32,8 +32,8 @@ def busca():
         dataComparation = [nome_flora, status_flora.decode('utf-8'), nome_aceito_flora, status_plantList.decode('utf-8'), nome_plantList, 'Diferente' if status_flora != status_plantList else '']
         locations_gbif = getLocation(planta, '', False)
 
-        return render_template(os.path.join('data','searchResult.html'), plant_searched=planta,form=form, dataComparation=dataComparation,sinonimos=sinonimos, dataLocation=locations_gbif)
-    return render_template(os.path.join('search','searchPlant.html'), form=form)
+        return render_template('data/searchResult.html', plant_searched=planta,form=form, dataComparation=dataComparation,sinonimos=sinonimos, dataLocation=locations_gbif)
+    return render_template('search/searchPlant.html', form=form)
 
 # Route para buscar informações de todas as plantas de um arquivo
 @app.route('/inserirDados', methods=['GET','POST'])
@@ -52,7 +52,7 @@ def importar():
         Summarize()
         return render_template('index.html')
 
-    return render_template(os.path.join('import','importFile.html'), form=form)
+    return render_template('import/importFile.html', form=form)
 
 def parseStatus(status):
     if status == 'NOME_ACEITO':
