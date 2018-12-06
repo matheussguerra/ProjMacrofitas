@@ -21,6 +21,7 @@ Campos (Colunas):
 Nome aceito, cidade, estado, país, latitude, longitude
 """
 import csv
+import os
 
 def getFilesContent(path):
     # Retorna o conteúdo do arquivo
@@ -39,18 +40,21 @@ def getFilesContent(path):
 def readAllFiles(inputPath=os.path.join("data","ListaMacrofitasResult.csv"),floraDoBrasilPath=os.path.join("data","floraDoBrasil.csv"), plantListPath=os.path.join("data","plantList.csv"), speciesLinkPath=os.path.join("data","speciesLink.csv"), gbifPath=os.path.join("data","gbifLocations.csv")):
     # Inicializa variáveis
     floraDoBrasilContent, plantListContent, speciesLinkContent, gbifContent = None, None, None, None
+
     inputContent = getFilesContent(inputPath)
     floraDoBrasilContent = getFilesContent(floraDoBrasilPath)
     plantListContent = getFilesContent(plantListPath)
+    floraDoBrasilSynonimousContent = getFilesContent(floraDoBrasilPath[:-4] + 'Sinonimos.csv')
 
     generateFirstTable(inputContent, floraDoBrasilContent, plantListContent, os.path.join('web','data','Tabela1.csv'))
 
-    generateSecondTable(floraDoBrasilContent, plantListContent, os.path.join('web','data','Tabela2.csv'))
+    generateSecondTable(floraDoBrasilSynonimousContent, os.path.join('web','data','Tabela2.csv'))
     speciesLinkContent = getFilesContent(speciesLinkPath)
-    secondTableContent = getFilesContent(os.path.join('web','data','Tabela2.csv'))
+
     gbifContent = getFilesContent(gbifPath)
     speciesLinkContent = getFilesContent(speciesLinkPath)
-    generateFourthTable(secondTableContent, gbifContent, speciesLinkContent, os.path.join('web','data','Tabela3.csv'))
+
+    generateThirdTable( gbifContent, speciesLinkContent, os.path.join('web','data','Tabela3.csv'))
 
 
 def generateFirstTable(inputContent, floraDoBrasilContent, plantListContent, firstTableOutputPath):
@@ -98,75 +102,25 @@ def generateFirstTable(inputContent, floraDoBrasilContent, plantListContent, fir
         writeOutput(firstTableOutputPath, 'a', lineToWrite)
 
 
-def generateSecondTable(floraDoBrasilContent, plantListContent, secondTableOutputPath):
+def generateSecondTable(floraDoBrasilSynonimousContent, secondTableOutputPath):
     writeOutput(secondTableOutputPath, 'w', ['Nome Aceito', 'Sinônimo'])
-    # Dicliptera ciliaris
-    # plantDict: planta -> sinonimos
-    plantDict = dict()
+    for line in floraDoBrasilSynonimousContent:
+        writeOutput(secondTableOutputPath, 'a', line.split(','))
 
-    for plantLine in floraDoBrasilContent:
-        lineSplitted = plantLine.split(',')
-        status = lineSplitted[1]
-
-        if status == "SINONIMO":
-            nomeAceito = lineSplitted[2]
-            sinonimo = lineSplitted[0]
-            try:
-                plantDict[nomeAceito].append(sinonimo)
-            except:
-                plantDict[nomeAceito] = []
-                plantDict[nomeAceito].append(sinonimo)
-
-        elif status == "NOME_ACEITO":
-            nomeAceito = lineSplitted[0]
-            sinonimo = None
-
-            if not plantDict.has_key(nomeAceito):
-                plantDict[nomeAceito] = []
-
-    for key in plantDict.keys():
-        lineToWrite = [key]
-        lineToWrite = lineToWrite + plantDict[key]
-        writeOutput(secondTableOutputPath, 'a', lineToWrite)
-
-
-def generateThirdTable():
-    raise NotImplementedError
-
-def generateFourthTable(secondTableContent, gbifContent, speciesLinkContent, fourthTableOutputPath):
+def generateThirdTable(gbifContent, speciesLinkContent, fourthTableOutputPath):
     writeOutput(fourthTableOutputPath, 'w', ['Nome aceito', 'Cidade', 'Estado', 'País', 'Latitude', 'Longitude'])
-    for plant in secondTableContent:
-        try:
-            accepted_name = plant.split(',')[0]
-        except:
-            accepted_name = plant
 
-        for line in gbifContent:
-            if accepted_name in line:
-                fields = line.split(',')
-                city = fields[1]
-                state = fields[2]
-                country = fields[3]
-                latitude = fields[4]
-                longitude = fields[5]
-                lineToWrite = [accepted_name, city, state, country, latitude, longitude]
-                writeOutput(fourthTableOutputPath, 'a', lineToWrite)
+    for line in gbifContent:
+        fields = line.split(',')
+        lineToWrite = fields
+        writeOutput(fourthTableOutputPath, 'a', lineToWrite)
 
-        for lineSpeciesLink in speciesLinkContent:
-            if accepted_name in lineSpeciesLink:
-                fields = lineSpeciesLink.split(',')
-                city = fields[2]
-                state = fields[3]
-                country = fields[4]
-                latitude = fields[5]
-                longitude = fields[6]
-                lineToWrite = [accepted_name, city, state, country, latitude, longitude]
-                writeOutput(fourthTableOutputPath, 'a', lineToWrite)
+    for lineSpeciesLink in speciesLinkContent:
+        fields = lineSpeciesLink.split(',')
+        lineToWrite = fields
+        writeOutput(fourthTableOutputPath, 'a', lineToWrite)
 
 def writeOutput(filePath, mode, content):
     with open(filePath, mode) as output:
         csvWriter = csv.writer(output)
         csvWriter.writerow(content)
-
-if __name__ == "__main__":
-    readAllFiles()

@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container" style="padding-top: 50px;overflow: scroll;">
+
+
+        <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sinônimos</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                    {% for plant in data %}
+                    <tr>
+
+                        {% for field in plant %}
+                        <td>{{field}}</td>
+                        {%endfor%}
+                    </tr>
+                    {%endfor%}
+
+                </tbody>
+              </table>
+
+</div>
+
+{% endblock %}

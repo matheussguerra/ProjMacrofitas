@@ -73,8 +73,12 @@ def getManyEntries(urlRequestTemplate, inputFile, outputPath, notFoundPath):
 def parseAndWriteJSON(json_data, outputPath, isNone=False, writeOutput=True):
 	# Abre o arquivo de saída para registro de informações
 	if writeOutput:
+		sinonimousPath = outputPath[:-4] + 'Sinonimos.csv'
+
 		outputFile = open(outputPath,'a')
+		sinonimousFile = open(sinonimousPath,'a')
 		output = csv.writer(outputFile)
+		outputSynonimous = csv.writer(sinonimousFile)
 
 	if isNone:
 		# Caso a planta não foi encontrada, é registrado como : "{Nome científico}, Not Found"
@@ -86,7 +90,7 @@ def parseAndWriteJSON(json_data, outputPath, isNone=False, writeOutput=True):
 	json_data = json_full[0]
 	json_sinonimos = json_full[1:]
 
-	sinonimos = [sinonimo["scientificname"] for sinonimo in json_sinonimos]
+	sinonimos = [sinonimo["scientificname"].encode('utf-8').strip() for sinonimo in json_sinonimos]
 
 	# Obtém o status da planta pesquisada -> {NOME_ACEITO , SINÔNIMO}
 	status = json_data["taxonomicstatus"]
@@ -117,4 +121,6 @@ def parseAndWriteJSON(json_data, outputPath, isNone=False, writeOutput=True):
 	# Dados são registrados
 	if writeOutput:
 		output.writerow((name, status, accepted_name))
-	return name, status, accepted_name
+		if len(sinonimos) >= 1:
+			outputSynonimous.writerow([name] + sinonimos)
+	return name, status, accepted_name, sinonimos

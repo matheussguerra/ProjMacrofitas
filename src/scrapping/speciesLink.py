@@ -17,6 +17,7 @@ def getData(searchTerm, offset=0, inputFile=os.path.join('data','ListaMacrofitas
 	not_found_registries = []
 
 	if response.ok:
+
 		# Fetch enconding used from source
 		http_encoding = response.encoding if 'charset' in response.headers.get('content-type', '').lower() else None
 		html_encoding = EncodingDetector.find_declared_encoding(response.content, is_html=True)
@@ -52,53 +53,60 @@ def getData(searchTerm, offset=0, inputFile=os.path.join('data','ListaMacrofitas
 		response.raise_for_status()
 
 def parseDiv(div):
-    try:
-            generic_name = div.find("span", {"class":"tGa"}).text.replace(',', '').encode('utf8')
-    except:
-            generic_name = ''
-    try:
-            specie_name = div.find("span", {"class":"tEa"}).text.replace(',', '').encode('utf8').strip()
-    except:
-            specie_name = ''
-    try:
-            municipality = div.find("span", {"class":"lM"}).text.replace(',', '').encode('utf8').strip()
-    except:
-            municipality = ''
-    try:
-            state = div.find("span", {"class":"lS"}).text.replace(',', '').encode('utf8').strip()
-    except:
-            state = ''
-    try:
-            country = div.find("span", {"class":"lC"}).text.replace(',', '').encode('utf8').strip()
-    except:
-            country = ''
-    try:
-            latitude = div.find("span", {"class":"lA"}).text.replace('[lat:', '').encode('utf8').strip()
-    except:
-            latitude = ''
-    try:
-            longitude = div.find("span", {"class":"lO"}).text.replace('long:', '').encode('utf8').strip()
-    except:
-            longitude = ''
-    try:
-            date = div.find("span", {"class":"cY"}).text.encode('utf8').strip()
-    except:
-            date = ''
+	try:
+			generic_name = div.find("span", {"class":"tGa"}).text.replace(',', '').encode('utf8')
+	except:
+			generic_name = ''
+	try:
+			specie_name = div.find("span", {"class":"tEa"}).text.replace(',', '').encode('utf8').strip()
+	except:
+			specie_name = ''
+	try:
+			municipality = div.find("span", {"class":"lM"}).text.replace(',', '').encode('utf8').strip()
+	except:
+			municipality = ''
+	try:
+			state = div.find("span", {"class":"lS"}).text.replace(',', '').encode('utf8').strip()
+	except:
+			state = ''
+	try:
+			country = div.find("span", {"class":"lC"}).text.replace(',', '').encode('utf8').strip()
+	except:
+			country = ''
+	try:
+			latitude = div.find("span", {"class":"lA"}).text.replace('[lat:', '').encode('utf8').strip()
+	except:
+			latitude = ''
+	try:
+			longitude = div.find("span", {"class":"lO"}).text.replace('long:', '').encode('utf8').strip()
+	except:
+			longitude = ''
+	try:
+			date = div.find("span", {"class":"cY"}).text.encode('utf8').strip()
+	except:
+			date = ''
 
-    scientificName = "{} {}".format(generic_name.strip(), specie_name.strip())
-    return scientificName, municipality, state, country, latitude, longitude, date
+	scientificName = "{} {}".format(generic_name.strip(), specie_name.strip())
+	return scientificName, municipality, state, country, latitude, longitude, date
 
-def writeOutput(registries, outputPath='../data/speciesLink.csv', notFoundPath=os.path.join('data','notFoundSPLK.csv')):
-    if os.path.isfile(outputPath):
-        outputLocation = open(outputPath, 'a')
-    else:
-        outputLocation = open(outputPath, 'w')
-        outputLocation.write("scientificName,municipality,state,country,latitude,longitude,date\n")
+def writeOutput(registries, outputPath=os.path.join('data','speciesLink.csv'), notFoundPath=os.path.join('data','notFoundSPLK.csv'), clearFlag=False):
+	if clearFlag:
+		outputLocation = open(outputPath, 'w')
+		return
 
-    for i in registries:
-        outputLocation.write(i + "\n")
+	if os.path.isfile(outputPath):
+		outputLocation = open(outputPath, 'a')
+	else:
+		outputLocation = open(outputPath, 'w')
+		outputLocation.write("scientificName,municipality,state,country,latitude,longitude,date\n")
 
-def writeNotFoundOutput(searchTerm, notFoundPath=os.path.join('data','notFoundSPLK.csv')):
+	for i in registries:
+		outputLocation.write(i + "\n")
+
+def writeNotFoundOutput(searchTerm, notFoundPath=os.path.join('data','notFoundSPLK.csv'), clearFlag=False):
+	if clearFlag:
+		outputLocation = open(notFoundPath, 'w')
+		return
 	try:
 		outputLocation = open(notFoundPath, 'a')
 	except:
@@ -106,13 +114,12 @@ def writeNotFoundOutput(searchTerm, notFoundPath=os.path.join('data','notFoundSP
 
 	outputLocation.write(searchTerm + '\n')
 
-if __name__ == '__main__':
-	with open('../data/floraDoBrasil.csv', 'r') as file:
+
+def getAllLocations():
+	writeOutput(registries=[], clearFlag=True)
+	writeNotFoundOutput(searchTerm='', clearFlag=True)
+	with open(os.path.join('data','gbifLocationsNotFound.csv'), 'r') as file:
 		lines = file.readlines()
 
 		for line in lines:
-			plant = line.split(',')
-			if plant[1] == 'SINONIMO':
-				getData(plant[2].strip())
-			else:
-				getData(plant[0].strip())
+			getData(line.decode('utf-8').rstrip())
