@@ -9,7 +9,7 @@ import os
 
 urlSearchTemplate = "http://www.splink.org.br/mod_perl/searchHint?ts_genus={}&offset={}"
 
-def getData(searchTerm, offset=0, inputFile='../data/ListaMacrofitasResult.csv'):
+def getData(searchTerm, offset=0, inputFile=os.path.join('data','ListaMacrofitasResult.csv')):
 
 	print 'Searching {},offset = {}'.format(searchTerm, offset)
 	response = requests.get(urlSearchTemplate.format(searchTerm, offset))
@@ -89,7 +89,7 @@ def parseDiv(div):
     scientificName = "{} {}".format(generic_name.strip(), specie_name.strip())
     return scientificName, municipality, state, country, latitude, longitude, date
 
-def writeOutput(registries, outputPath='../data/speciesLink.csv', notFoundPath='../data/notFoundSPLK.csv'):
+def writeOutput(registries, outputPath='../data/speciesLink.csv', notFoundPath=os.path.join('data','notFoundSPLK.csv')):
     if os.path.isfile(outputPath):
         outputLocation = open(outputPath, 'a')
     else:
@@ -99,7 +99,7 @@ def writeOutput(registries, outputPath='../data/speciesLink.csv', notFoundPath='
     for i in registries:
         outputLocation.write(i + "\n")
 
-def writeNotFoundOutput(searchTerm, notFoundPath='../data/notFoundSPLK.csv'):
+def writeNotFoundOutput(searchTerm, notFoundPath=os.path.join('data','notFoundSPLK.csv')):
 	try:
 		outputLocation = open(notFoundPath, 'a')
 	except:

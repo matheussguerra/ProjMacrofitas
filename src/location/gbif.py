@@ -62,15 +62,15 @@ def writeOutput(path ,line):
     outputLocation.write(line + "\n")
 
 if __name__ == '__main__':
-    input = open('../data/result.csv', 'r')
-    errors = open('../data/errors.csv', 'a')
+    input = open(os.path.join('data','result.csv'), 'r')
+    errors = open(os.path.join('data','errors.csv'), 'a')
     lines = input.readlines()
 
     for line in lines:
         try:
             if line.split(',')[1] == 'ok':
-                getLocation(line.split(',')[0].replace('\n',''), "../data/gbifLocations.csv")
+                getLocation(line.split(',')[0].replace('\n',''), os.path.join("data','gbifLocations.csv"))
             else:
-                getLocation(line.split(',')[0].replace('\n',''), "../data/gbifLocations.csv")
+                getLocation(line.split(',')[0].replace('\n',''), os.path.join("data','gbifLocations.csv"))
         except:
             errors.write(line)

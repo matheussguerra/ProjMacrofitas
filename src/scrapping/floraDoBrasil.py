@@ -9,10 +9,11 @@
 import requests
 import json
 import csv
+import os
 
 # Método principal. Obtenção de informações de todas as plantas de um arquivo de entrada
 # Obtenção de informações de uma planta específica
-def getData(searchTerm='', allDataset=False, inputFile='data/ListaMacrofitasResult.csv', outputPath='data/floraDoBrasil.csv', notFoundPath='data/notFoundFDB.csv'):
+def getData(searchTerm='', allDataset=False, inputFile=os.path.join('data','ListaMacrofitasResult.csv'), outputPath=os.path.join('data','floraDoBrasil.csv'), notFoundPath=os.path.join('data','notFoundFDB.csv')):
 	# URL Modelo para pesquisas de plantas
 	urlRequestTemplate = "http://servicos.jbrj.gov.br/flora/taxon/{}"
 

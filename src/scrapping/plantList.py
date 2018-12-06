@@ -54,7 +54,7 @@ def getOneEntry2(searchTerm, searchTermAbsolute):
         return 'Bad Response!'
 
 
-def getAllEntries(inputPath = 'data/ListaMacrofitasResult.csv'):
+def getAllEntries(inputPath = os.path.join('data','ListaMacrofitasResult.csv')):
     with open(inputPath) as input:
         lines = input.readlines()
 
@@ -71,7 +71,7 @@ def processHtml(soup, line):
 
     if "No results" in title:
         result = line + ' not found.\n'
-        output = open('data/notFoundPlantList.csv', 'a')
+        output = open(os.path.join('data','notFoundPlantList.csv'), 'a')
         output.write(result)
         output.close()
         result = 'none'
@@ -86,7 +86,7 @@ def processHtml(soup, line):
             #file.close()
         else:
             result = line + ' not accepted names.' '\n'
-            output = open('data/notFoundPlantList.csv', 'a')
+            output = open(os.path.join('data','notFoundPlantList.csv'), 'a')
             output.write(result)
             output.close()
             result = 'none'
@@ -106,7 +106,7 @@ def processHtml(soup, line):
         else:
             result = line + ',' + status
 
-        output = open('data/plantList.csv', 'a')
+        output = open(os.path.join('data','plantList.csv'), 'a')
         output.write(result + '\n')
         output.close()
 
