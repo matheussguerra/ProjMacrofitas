@@ -40,12 +40,14 @@ Aceitação total
 
 ### 5. Pendencias
 <div id='id5' />
-| Pendência | Resolução | Unidade Responsável |
-|----------|-----------|---------------------|
-| Visualisaçes | saber exatamente o que o cliente quer | Equipe |
+
+| Pendência    | Resolução                             | Unidade Responsável |
+|--------------|---------------------------------------|---------------------|
+| Visualisaçes | Saber exatamente o que o cliente quer | Equipe              |
 
 ### 6. Registros das Lições Aprendidas
 <div id='id6' />
+
 | Fase | Área de Conhecimento | Categoria | Situação Resultado Obtido | Lição Aprendida |
 |-----|----------------------|-----------|---------------------------|-----------------|
 | 1-4 | Equipe |  | Trabalho em Equipe | Lições referentes à organização da equipe |
@@ -68,18 +70,24 @@ O produto atende tudo que foi pedido no início e durante o decorrer do período
 
 ### 10. Aprovação
 <div id='id10' />
-Gerente do Projeto | Data | Assinatura
--------------------|------|------------
-Reginaldo Ré       | 06/12/2018 |
 
-Gestor do Projeto | Data | Assinatura
-------------------|------|------------
-Vitor Yudi Shinohara | 06/12/2018 |
+| Gerente do Projeto | Data       | Assinatura |
+|--------------------|------------|------------|
+| Reginaldo Ré       | 06/12/2018 |            |
 
-Secretário-Geral/Diretor-Geral do Projeto | Data | Assinatura
-------------------------------------------|------|------------
-Rafael Alessandro Ramos                   | 06/12/2018 |
+| Gestor do Projeto    | Data       | Assinatura |
+|----------------------|------------|------------|
+| Vitor Yudi Shinohara | 06/12/2018 |            |
+
+| Secretário-Geral/Diretor-Geral do Projeto | Data       | Assinatura |
+|-------------------------------------------|------------|------------|
+| Rafael Alessandro Ramos                   | 06/12/2018 |            |
+
 
 ### 11. Recebimento
 <div id='id11' />
-Data : 06/12/2018 
+
+| Data       |
+|------------|
+| 06/12/2018 |
+
