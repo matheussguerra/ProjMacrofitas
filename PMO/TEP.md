@@ -47,12 +47,12 @@ Visualisaçes | saber exatamente o que o cliente quer | Equipe
 ### 6. Registros das Lições Aprendidas
 <div id='id6' />
 Fase | Área de Conhecimento | Categoria | Situação Resultado Obtido | Lição Aprendida
------|----------------------|-----------|---------------------------|--------------------------------------------------------
- 1-4 | Equipe | | Trabalho em Equipe | Lições referentes à organização da equipe
- 1-4 | Disciplina | | Engenharia de Software | Conceitos importantes sobre engenharia de sofware
- 1-4 | Tempo | | Estimativa de tempo | Compreenção da importancia das estimativas de tempo em um projeto de engenharia de software
- 1-4 |  Projeto | | Pontos do Projeto | Orgnaização e dificuldades envolvidas em gerenciar um projeto
- 1-4 | Projeto | | Cronograma | Importancia de respeitar os cronogramas de entrega das parciais do projeto
+-----|----------------------|-----------|---------------------------|--------------------------------------
+ 1-4 | Equipe | - | Trabalho em Equipe | Lições referentes à organização da equipe
+ 1-4 | Disciplina | - | Engenharia de Software | Conceitos importantes sobre engenharia de sofware
+ 1-4 | Tempo | - | Estimativa de tempo | Compreenção da importancia das estimativas de tempo em um projeto
+ 1-4 |  Projeto | - | Pontos do Projeto | Orgnaização e dificuldades envolvidas em gerenciar um projeto
+ 1-4 | Projeto | - | Cronograma | Importancia de respeitar os cronogramas de entrega das parciais do projeto
 
 ### 7. Considerações do Gestor do Projeto
 <div id='id7' />
@@ -82,6 +82,4 @@ Rafael Alessandro Ramos                   | 05/12/2018 |
 
 ### 11. Recebimento
 <div id='id11' />
-| Data |
-|------|
-|06/12/2018 |
+Data : 06/12/2018 
