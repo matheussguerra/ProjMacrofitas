@@ -9,6 +9,7 @@ from scrapping.plantList import getOneEntry as getOneEntryPlantList
 from location.gbif import getLocation
 from web.forms.importForm import ImportForm
 from preprocessing.core import main as preProcess
+import os
 
 # Route para buscar informações de uma única planta
 @app.route('/busca', methods=['GET', 'POST'])
