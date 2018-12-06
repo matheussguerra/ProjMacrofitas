@@ -16,11 +16,10 @@
 4. [Classificação do aceite](#id4)
 5. [Pendencias](#id5)
 6. [Registros das Lições Aprendidas](#id6)
-7. [Considerações do Gestor do Projeto](#id7)
-8. [Considerações do Gerente de Projeto](#id8)
-9. [Considerações do beneficiário/Unidade demandante](#id9)
-10. [Aprovação](#id10)
-11. [Recebimento](#id11)
+7. [Considerações do Gerente de Projeto](#id7)
+8. [Considerações do beneficiário/Unidade demandante](#id8)
+9. [Aprovação](#id9)
+10. [Recebimento](#id10)
 
 ### 1. Motivo do encerramento
 <div id='id1' />
@@ -56,36 +55,28 @@ Aceitação total
 | 1-4 |  Projeto |  | Pontos do Projeto | Orgnaização e dificuldades envolvidas em gerenciar um projeto |
 | 1-4 | Projeto |  | Cronograma | Importancia de respeitar os cronogramas de entrega das parciais do projeto |
 
-### 7. Considerações do Gestor do Projeto
+### 7. Considerações do Gerente de Projeto
 <div id='id7' />
-
-
-### 8. Considerações do Gerente de Projeto
-<div id='id8' />
 O projeto correu bem no decorrer do semestre, apesar de corrido e em alguns momentos não utilizar todas as ferramentas da forma correta, na primeira e a partir da metade da terceira entrega foram seguidas as normas da melhor forma possível. No geral, apesar de corrido e da volátil necessidade dos clientes no que se refere ao teor do produto, o projeto tomou um rumo totalmente produtivo e aceitável.
 
-### 9. Considerações do Beneficiário/Unidade Demandante
-<div id='id9' />
+### 8. Considerações do Beneficiário/Unidade Demandante
+<div id='id8' />
 O produto atende tudo que foi pedido no início e durante o decorrer do período de construção do software.
 
-### 10. Aprovação
-<div id='id10' />
+### 9. Aprovação
+<div id='id9' />
 
 | Gerente do Projeto | Data       | Assinatura |
 |--------------------|------------|------------|
-| Reginaldo Ré       | 06/12/2018 |            |
-
-| Gestor do Projeto    | Data       | Assinatura |
-|----------------------|------------|------------|
-| Vitor Yudi Shinohara | 06/12/2018 |            |
+| Vitor yudi Shinohara       | 06/12/2018 |            |
 
 | Secretário-Geral/Diretor-Geral do Projeto | Data       | Assinatura |
 |-------------------------------------------|------------|------------|
 | Rafael Alessandro Ramos                   | 06/12/2018 |            |
 
 
-### 11. Recebimento
-<div id='id11' />
+### 10. Recebimento
+<div id='id10' />
 
 | Data       |
 |------------|
