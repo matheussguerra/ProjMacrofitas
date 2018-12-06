@@ -40,19 +40,19 @@ Aceitação total
 
 ### 5. Pendencias
 <div id='id5' />
-Pendência | Resolução | Unidade Responsável
-----------|-----------|---------------------
-Visualisaçes | saber exatamente o que o cliente quer | Equipe
+| Pendência | Resolução | Unidade Responsável |
+|----------|-----------|---------------------|
+| Visualisaçes | saber exatamente o que o cliente quer | Equipe |
 
 ### 6. Registros das Lições Aprendidas
 <div id='id6' />
-Fase | Área de Conhecimento | Categoria | Situação Resultado Obtido | Lição Aprendida
------|----------------------|-----------|---------------------------|--------------------------------------
- 1-4 | Equipe | - | Trabalho em Equipe | Lições referentes à organização da equipe
- 1-4 | Disciplina | - | Engenharia de Software | Conceitos importantes sobre engenharia de sofware
- 1-4 | Tempo | - | Estimativa de tempo | Compreenção da importancia das estimativas de tempo em um projeto
- 1-4 |  Projeto | - | Pontos do Projeto | Orgnaização e dificuldades envolvidas em gerenciar um projeto
- 1-4 | Projeto | - | Cronograma | Importancia de respeitar os cronogramas de entrega das parciais do projeto
+| Fase | Área de Conhecimento | Categoria | Situação Resultado Obtido | Lição Aprendida |
+|-----|----------------------|-----------|---------------------------|-----------------|
+| 1-4 | Equipe |  | Trabalho em Equipe | Lições referentes à organização da equipe |
+| 1-4 | Disciplina |  | Engenharia de Software | Conceitos importantes sobre engenharia de sofware |
+| 1-4 | Tempo |  | Estimativa de tempo | Compreenção da importancia das estimativas de tempo em um projeto |
+| 1-4 |  Projeto |  | Pontos do Projeto | Orgnaização e dificuldades envolvidas em gerenciar um projeto |
+| 1-4 | Projeto |  | Cronograma | Importancia de respeitar os cronogramas de entrega das parciais do projeto |
 
 ### 7. Considerações do Gestor do Projeto
 <div id='id7' />
@@ -70,15 +70,15 @@ O produto atende tudo que foi pedido no início e durante o decorrer do período
 <div id='id10' />
 Gerente do Projeto | Data | Assinatura
 -------------------|------|------------
-Reginaldo Ré       | 05/12/2018 |
+Reginaldo Ré       | 06/12/2018 |
 
 Gestor do Projeto | Data | Assinatura
 ------------------|------|------------
-Vitor Yudi Shinohara | 05/12/2018 |
+Vitor Yudi Shinohara | 06/12/2018 |
 
 Secretário-Geral/Diretor-Geral do Projeto | Data | Assinatura
 ------------------------------------------|------|------------
-Rafael Alessandro Ramos                   | 05/12/2018 |
+Rafael Alessandro Ramos                   | 06/12/2018 |
 
 ### 11. Recebimento
 <div id='id11' />
