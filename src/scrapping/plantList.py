@@ -25,9 +25,15 @@ def getOneEntry(searchTerm):
         if ("/tpl" in result[0]):
            result = getOneEntry2(result[1], result[0])
 
-        print result
-        return result
-
+        resultSplited = result.split(',')
+        if len(resultSplited) == 3:
+            resultSplited = [i.decode('utf-8').strip() for i in resultSplited]
+            nome = resultSplited[0]
+            status = resultSplited[1]
+            nome_aceito = resultSplited[1]
+            return nome, status, nome_aceito
+        else:
+            return '', '', ''
 
     else:
         return 'Bad Response!'
@@ -48,7 +54,7 @@ def getOneEntry2(searchTerm, searchTermAbsolute):
         return 'Bad Response!'
 
 
-def getAllEntries(inputPath = '../data/ListaMacrofitasResult.csv'):
+def getAllEntries(inputPath = 'data/ListaMacrofitasResult.csv'):
     with open(inputPath) as input:
         lines = input.readlines()
 
@@ -65,7 +71,7 @@ def processHtml(soup, line):
 
     if "No results" in title:
         result = line + ' not found.\n'
-        output = open('../data/notFoundPlantList.csv', 'a')
+        output = open('data/notFoundPlantList.csv', 'a')
         output.write(result)
         output.close()
         result = 'none'
@@ -80,7 +86,7 @@ def processHtml(soup, line):
             #file.close()
         else:
             result = line + ' not accepted names.' '\n'
-            output = open('../data/notFoundPlantList.csv', 'a')
+            output = open('data/notFoundPlantList.csv', 'a')
             output.write(result)
             output.close()
             result = 'none'
@@ -100,7 +106,7 @@ def processHtml(soup, line):
         else:
             result = line + ',' + status
 
-        output = open('../data/plantList.csv', 'a')
+        output = open('data/plantList.csv', 'a')
         output.write(result + '\n')
         output.close()
 

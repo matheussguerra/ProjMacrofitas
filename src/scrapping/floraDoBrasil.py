@@ -81,7 +81,12 @@ def parseAndWriteJSON(json_data, outputPath, isNone=False, writeOutput=True):
 		return 0
 
 	# Obtém o os dados do JSON
-	json_data = json.loads(json_data)[0]
+	json_full = json.loads(json_data)
+	json_data = json_full[0]
+	json_sinonimos = json_full[1:]
+
+	sinonimos = [sinonimo["scientificname"] for sinonimo in json_sinonimos]
+
 	# Obtém o status da planta pesquisada -> {NOME_ACEITO , SINÔNIMO}
 	status = json_data["taxonomicstatus"]
 	# Inicializa variáveis
@@ -101,7 +106,7 @@ def parseAndWriteJSON(json_data, outputPath, isNone=False, writeOutput=True):
 			accepted_name = json_data["NOME ACEITO"][0]["scientificname"].split()[0] + ' ' + json_data["NOME ACEITO"][0]["scientificname"].split()[1]
 		except:
 			# Caso não haja o campo "NOME ACEITO" no JSON, o nome aceito é definido como "Not Specified"
-			accepted_name = "Not Specified"
+			accepted_name = "Não especificado"
 			pass
 
 	else:

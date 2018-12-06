@@ -21,19 +21,21 @@ def getLocation(sciName, outputPath, writeOutputFlag=True):
 def parseResult(result, sciName):
     name_splited = result['scientificName'].encode('utf8').split()
     scientificName = "{} {}".format(name_splited[0], name_splited[1])
+
     municipality, state, country, latitude, longitude, date = "", "", "", "", "", ""
-    if scientificName == sciName:
+
+    if scientificName.lower() == sciName.lower():
         try:
-            municipality =  result['municipality'].encode('utf8')
+            municipality =  result['municipality'].encode('utf-8')
         except:
             municipality = ''
         try:
-            state = result['stateProvince'].encode('utf8')
+            state = result['stateProvince'].encode('utf-8')
         except:
             state = ''
 
         try:
-            country = result['country'].encode('utf8')
+            country = result['country'].encode('utf-8')
         except:
             country = ''
         try:
@@ -70,6 +72,5 @@ if __name__ == '__main__':
                 getLocation(line.split(',')[0].replace('\n',''), "../data/gbifLocations.csv")
             else:
                 getLocation(line.split(',')[0].replace('\n',''), "../data/gbifLocations.csv")
-            print line.split(',')[0].replace('\n','')
         except:
             errors.write(line)

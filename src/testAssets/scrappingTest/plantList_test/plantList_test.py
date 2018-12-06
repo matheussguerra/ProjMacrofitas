@@ -14,7 +14,6 @@ class TestDataGatheringMethods(unittest.TestCase):
 		getAllEntries(inputPath='input_test.txt', outputPath='output_test.txt', notFoundPath='notFound_test.txt')
 		output = open('output_test.txt', 'r')
 		outputLine = output.readline()
-		print 'aaa ' + outputLine
 		status = outputLine.split(',')[1]
 		self.assertEqual(status,'NOME_ACEITO')
 
