@@ -36,21 +36,21 @@ def getFilesContent(path):
     #    raise Exception('Arquivo não encontrado: {}'.format(path))
     #    return None
 
-def readAllFiles(inputPath="../data/ListaMacrofitasResult.csv",floraDoBrasilPath="../data/floraDoBrasil.csv", plantListPath="../data/plantList.csv", speciesLinkPath="../data/speciesLink.csv", gbifPath="../data/gbifLocations.csv"):
+def readAllFiles(inputPath=os.path.join("data","ListaMacrofitasResult.csv"),floraDoBrasilPath=os.path.join("data","floraDoBrasil.csv"), plantListPath=os.path.join("data","plantList.csv"), speciesLinkPath=os.path.join("data","speciesLink.csv"), gbifPath=os.path.join("data","gbifLocations.csv")):
     # Inicializa variáveis
     floraDoBrasilContent, plantListContent, speciesLinkContent, gbifContent = None, None, None, None
     inputContent = getFilesContent(inputPath)
     floraDoBrasilContent = getFilesContent(floraDoBrasilPath)
     plantListContent = getFilesContent(plantListPath)
 
-    generateFirstTable(inputContent, floraDoBrasilContent, plantListContent, '../../output/Tabela1.csv')
+    generateFirstTable(inputContent, floraDoBrasilContent, plantListContent, os.path.join('web','data','Tabela1.csv'))
 
-    generateSecondTable(floraDoBrasilContent, plantListContent, '../../output/Tabela2.csv')
+    generateSecondTable(floraDoBrasilContent, plantListContent, os.path.join('web','data','Tabela2.csv'))
     speciesLinkContent = getFilesContent(speciesLinkPath)
-    secondTableContent = getFilesContent('../../output/Tabela2.csv')
+    secondTableContent = getFilesContent(os.path.join('web','data','Tabela2.csv'))
     gbifContent = getFilesContent(gbifPath)
     speciesLinkContent = getFilesContent(speciesLinkPath)
-    generateFourthTable(secondTableContent, gbifContent, speciesLinkContent, '../../output/Tabela4.csv')
+    generateFourthTable(secondTableContent, gbifContent, speciesLinkContent, os.path.join('web','data','Tabela3.csv'))
 
 
 def generateFirstTable(inputContent, floraDoBrasilContent, plantListContent, firstTableOutputPath):

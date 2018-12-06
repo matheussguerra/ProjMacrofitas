@@ -28,10 +28,9 @@ def busca():
 
         dataComparation = [nome_flora, status_flora.decode('utf-8'), nome_aceito_flora, status_plantList.decode('utf-8'), nome_plantList, 'Diferente' if status_flora != status_plantList else '']
         locations_gbif = getLocation(planta, '', False)
-        print locations_gbif
 
-        return render_template('data/searchResult.html', plant_searched=planta,form=form, dataComparation=dataComparation, dataLocation=locations_gbif)
-    return render_template('search/searchPlant.html', form=form)
+        return render_template(os.path.join('data','searchResult.html'), plant_searched=planta,form=form, dataComparation=dataComparation, dataLocation=locations_gbif)
+    return render_template(os.path.join('search','searchPlant.html'), form=form)
 
 # Route para buscar informações de todas as plantas de um arquivo
 @app.route('/inserirDados', methods=['GET','POST'])
@@ -39,9 +38,9 @@ def importar():
     form = ImportForm(request.form)
     if (request.method == 'POST' and form.validate()):
         filename = request.files['arquivo'].filename
-        print filename
+
         extensao = filename.split('.')[1]
-        request.files['arquivo'].save('data/ListaMacrofitas.{}'.format(extensao))
+        request.files['arquivo'].save(os.path.join('data','ListaMacrofitas.{}').format(extensao))
         preProcess()
         # Implementar threads para melhorar performance
         getDataFloraDoBrasil(allDataset=True)
@@ -52,7 +51,7 @@ def importar():
 
         return render_template('index.html')
 
-    return render_template('import/importFile.html', form=form)
+    return render_template(os.path.join('import','importFile.html'), form=form)
 
 def parseStatus(status):
     if status == 'NOME_ACEITO':

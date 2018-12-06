@@ -11,7 +11,6 @@ urlSearchTemplate = "http://www.splink.org.br/mod_perl/searchHint?ts_genus={}&of
 
 def getData(searchTerm, offset=0, inputFile=os.path.join('data','ListaMacrofitasResult.csv')):
 
-	print 'Searching {},offset = {}'.format(searchTerm, offset)
 	response = requests.get(urlSearchTemplate.format(searchTerm, offset))
 
 	registries = []
