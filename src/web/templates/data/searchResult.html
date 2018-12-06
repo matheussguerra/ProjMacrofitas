@@ -1,0 +1,100 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<style>
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  text-align: center;
+}
+a:hover {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  text-align: center;
+}
+</style>
+
+<div class="container" style="padding-top: 50px;">
+    <div class="row">
+            <h1>Resultados da Busca </h1>
+    </div>
+    <div class="row">
+        <h2>{{plant_searched}}</h2>
+    </div>
+    <div class="row" style="padding-top: 50px">
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Status Flora do Brasil</th>
+                        <th scope="col">Nome Flora do Brasil</th>
+                        <th scope="col">Status PlantList</th>
+                        <th scope="col">Nome PlantList</th>
+                        <th scope="col">Comparação</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        {% for plant in dataComparation %}
+
+                        <td>{{plant}}</td>
+
+                        {%endfor%}
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Tabela 2 -->
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1>
+            </h1>
+        </div>
+    </div>
+
+
+    <!-- Tabela 3 -->
+
+    <div class="row" style="padding-top: 50px;">
+        <div class="col-md-12">
+            <div class="row">
+            </div>
+            <div class="row">
+                    <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Cidade</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">País</th>
+                                    <th scope="col">Latitude</th>
+                                    <th scope="col">Longitude</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                {% for plant in dataLocation %}
+                                <tr>
+                                    <td>{{plant[0]}}</td>
+                                    <td>{{plant[1]}}</td>
+                                    <td>{{plant[2]}}</td>
+                                    <td>{{plant[3]}}</td>
+                                    <td>{{plant[4]}}</td>
+                                    <td>{{plant[5]}}</td>
+                                </tr>
+                                {%endfor%}
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

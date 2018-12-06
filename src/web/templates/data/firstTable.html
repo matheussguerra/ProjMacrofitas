@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container" style="padding-top: 50px;">
+
+
+        <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Status Flora do Brasil</th>
+                    <th scope="col">Nome Flora do Brasil</th>
+                    <th scope="col">Status PlantList</th>
+                    <th scope="col">Nome PlantList</th>
+                    <th scope="col">Comparação</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                    {% for plant in data %}
+                    <tr>
+                        <td>{{plant[0]}}</td>
+                        <td>{{plant[1]}}</td>
+                        <td>{{plant[2]}}</td>
+                        <td>{{plant[3]}}</td>
+                        <td>{{plant[4]}}</td>
+                        <td>{{plant[5]}}</td>
+
+                    </tr>
+                    {%endfor%}
+
+                </tbody>
+              </table>
+
+</div>
+
+{% endblock %}

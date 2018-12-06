@@ -145,12 +145,9 @@ def getSynonymous(soup):
     species = soup('h1')[1]('span')[3]('i')[1].text
     return str(genus) + ' ' + str(species)
 
-
-
-
 def main():
-    #getAllEntries()
-    getOneEntry('Dicliptera ciliaris')
+    getAllEntries()
+    #getOneEntry('Dicliptera ciliaris')
 
 
 if __name__ == '__main__':

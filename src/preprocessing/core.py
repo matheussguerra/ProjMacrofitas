@@ -6,10 +6,10 @@ def xlsxToCsv(path):
 
 
 def main():
-	xlsxToCsv("../data/ListaMacrofitas.xlsx")
+	xlsxToCsv("data/ListaMacrofitas.xlsx")
 
-	ref_arquivo = open("../data/ListaMacrofitas.csv", 'r')
-	result_arquivo = open("../data/ListaMacrofitasResult.csv", 'w')
+	ref_arquivo = open("data/ListaMacrofitas.csv", 'r')
+	result_arquivo = open("data/ListaMacrofitasResult.csv", 'w')
 
 	for linha in ref_arquivo.readlines():
 		especie = linha.split()
