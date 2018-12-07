@@ -69,7 +69,7 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 <div id='id4' />
 
 | tarefas inicialmente planejadas | Tempo estimado |
-| --- | --- | --- |
+| --- | --- |
 | Saidas | 1 dia
 | Gráficos | 1 dia
 | Mapas | 1 dia
