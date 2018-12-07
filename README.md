@@ -7,7 +7,7 @@ Projeto desenvolvido na aula de Engenharia de Software II na UTFPR-CM para valid
 # Instalação:
   - Faça o download do Python2.7 para Windows, clique  [aqui](https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64.msi) para fazer o download;
   - Instale o Python para Windows;
-  - Faça o download do PlantSearch e salve o sistema na pasta Download, clique [aqui](https://github.com/GuerraUTFPR/ProjMacrofitas/archive/master.zip) para fazer o download;
+  - Faça o download do PlantSearch, clique [aqui](https://github.com/GuerraUTFPR/ProjMacrofitas/archive/master.zip) para fazer o download;
   - Extraia os arquivos da pasta;
-  - Execute o arquivo PlantSearch.
-  - Para usar o software, basta abrir um navegador e acessar o link [127.0.0.1:5000](127.0.0.1:5000)
+  - Execute, como administrador, o arquivo PlantSearch.bat (Clique com o botão direito e em seguida clique em executar como administrador);
+  - Para usar o software, basta abrir um navegador e acessar o link [127.0.0.1:5000](http://127.0.0.1:5000)
