@@ -13,6 +13,21 @@ a:hover {
   text-decoration: inherit; /* no underline */
   text-align: center;
 }
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+ /* position: absolute; */
+ /* right: 396px; /* relative */
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 </style>
 
 <div class="container" style="padding-top: 50px;">
@@ -21,6 +36,9 @@ a:hover {
     </div>
     <div class="row">
         <h2 class="text-muted">{{plant_searched}}</h2>
+        <a href="{{url_for('mapa', planta=plant_searched)}}">
+            <button class="button" name="export_btn">Exportar dados para visualização »</button>
+        </a>
     </div>
     <div class="row" style="padding-top: 50px">
         <div class="col-md-12">
@@ -111,5 +129,4 @@ a:hover {
     </div>
 
 </div>
-
 {% endblock %}

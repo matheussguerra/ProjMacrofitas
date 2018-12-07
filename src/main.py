@@ -11,8 +11,10 @@ from location.gbif import getAllLocations, getLocation
 from web.forms.importForm import ImportForm
 from preprocessing.core import main as preProcess
 from dataSummarizer.core import readAllFiles as Summarize
+from web.visualizations.mapgen import MapGenerator
 
 import os
+import pandas
 
 # Route para buscar informações de uma única planta
 @app.route('/busca', methods=['GET', 'POST'])
@@ -53,6 +55,20 @@ def importar():
         return render_template('index.html')
 
     return render_template('import/importFile.html', form=form)
+
+@app.route('/mapa/<planta>', methods=['GET', 'POST'])
+def mapa(planta):
+    locations_gbif = getLocation(planta, '', False)
+
+    print locations_gbif
+
+    map_html = MapGenerator().generate_map_html(locations_gbif)
+
+    #return render_template(map_html._repr_html_())
+
+    print os.getcwd() + '/web/visualizations/map.html'
+    return app.send_static_file(os.getcwd() + '/web/visualizations/map.html')
+
 
 def parseStatus(status):
     if status == 'NOME_ACEITO':
