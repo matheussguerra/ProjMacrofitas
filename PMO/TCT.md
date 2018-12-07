@@ -82,11 +82,11 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 | Gerar tabelas | 3 dias | 4 h |
 | Elaborar testes | 1 dia | 23 h |
 | Aplicar testes | 1 dia |
-| correção de bugs | 26 h |
+| correção de bugs | 3 dias | 26 h |
 | Desenvolver plataforma web para integrar scripts | 5 dias | 17 h |
 | testar sistema no windows| 1 dia | 8 h |
 | Integrar visualisações na View | 1 dia |
-| Refatoração do código (PlantList) | 13 h |
+| Refatoração do código (PlantList) | 2 dias | 13 h |
 | Adicionar scrappping Flora do Brasil | 3 dias | 
 | Elaborar Termo de Finalização de projeto (TEP) | 3 dias | 9 h |
-| Gerar tabelas de esforço | 1 dia |
+| Gerar tabelas de esforço | 1 dia | 
