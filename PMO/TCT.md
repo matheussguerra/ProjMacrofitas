@@ -6,6 +6,7 @@
 |Versão | Data | Autor | Notas da Revisão |
 |--- | --- | --- | --- |
 |  1.0  |  06/12/2018   | Rafael    |  Primeira versão do TCT   |
+| 1.1 | 07/12/2018 | Rafael | Populando dados faltantes do TCT |
 
 
 **Sumário**
@@ -23,45 +24,42 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 
 | Tarefas inicialmente planejadas | Tempo estimado |
 | --- | --- |
-| Validação de Espécies |  
-| Pré processamento de dados da base cedida |
-| Verificação da lista de nomes de espécies e autores |
-| Extração de dados das online databases (Flora do Brasil e PlantList) |
-| Estruturação dos dados das online databases |
-| Verificar/modificar nomes na base cedida com os nomes dos dados estruturados |
-| Elaborar testes unitários |
-| Aplicar testes unitários |
+| Validação de Espécies | 2 dias |
+| Pré processamento de dados da base cedida | 1 dia |
+| Verificação da lista de nomes de espécies e autores | 2 dias |
+| Extração de dados das online databases (Flora do Brasil e PlantList) | 5 dias |
+| Estruturação dos dados das online databases | 3 dias |
+| Verificar/modificar nomes na base cedida com os nomes dos dados estruturados | 3 dias |
+| Elaborar e aplicar testes unitários |
 
-|  Tarefas ralmente realizadas | Tempo real executado |
-| --- | --- |
-| Pré processamento das bases cedidas |  |
-| Verificação da lista de nomes de espécies e autores |
-| Estração dos dados das online databases |
-| Estruturação dos dados das online databases |
-| Verificar/modificar nomes na base com os nomes dos dados estruturados |
-| Elaborar testes |
-| Aplicar testes |
+|  Tarefas ralmente realizadas | Tempo Estimado | Tempo real executado |
+| --- | --- | --- |
+| Pré processamento das bases cedidas | 1 dia | 3 h |
+| Verificação da lista de nomes de espécies e autores | 2 dias |
+| Estração dos dados das online databases | 5 dias |
+| Estruturação dos dados das online databases | 3 dias |
+| Verificar/modificar nomes na base com os nomes dos dados estruturados | 3 dias |
+| Elaborar e aplicar testes |
 
 ### 3. Terceira Entrega
 <div id='id3' />
 
 | tarefas inicialmente planejadas | Tempo estimado | 
 | --- | --- |
-| Busca de Ocorrências de espécies |
-| Extração de dados das online databases (GBIF e Specieslink) | 5 dias
-| Triagem dos dados |
-| Correção de nomes inválidos |
-| Correção de incoerências |
-| Elaborar testes unitários |
-| Aplicar testes unitários |
+| Busca de Ocorrências de espécies | 2 dias |
+| Extração de dados das online databases (GBIF e Specieslink) | 5 dias | 
+| Triagem dos dados | 3 dias |
+| Correção de nomes inválidos | 3 dias |
+| Correção de incoerências | 4 dias |
+| Elaborar e aplicar testes |
 
  | tarefas ralmente realizadas | Tempo Estimado | Tempo real executado |
  | --- | --- | --- |
- | Extração de dados das onlines databases(GBIF e Specieslink) | 5 dias |
+ | Extração de dados das onlines databases(GBIF e Specieslink) | 5 dias | 13 h |
  | Correção de nomes inválidos | 3 dias |
  | Correção de incoerencias | 3 dias |
- | Elaborar testes |
- | Aplicar testes |
+ | Elaborar testes | 1 dia | 2 h
+ | Aplicar testes | 1 dia | 
  | Corrigir cronograma de tarefas | 1 dia |
  
 
@@ -77,14 +75,12 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 
 | tarefas ralmente realizadas | Tempo Estimado | Tempo real executado |
 | --- | --- | --- |
-| Gerar gráficos |
-| Gerar mapas de distribuição para determinada planta|
+| Gerar mapas de distribuição para determinada planta| 1 dia | 7 h |
 | Gerar tabelas | 3 dias | 4 h |
-| Elaborar testes | 1 dia | 23 h |
-| Aplicar testes | 1 dia |
-| correção de bugs | 3 dias | 26 h |
+| Elaborar e aplicar testes | 1 dia | 23 h |
+| correção de bugs | 3 dias | 32 h |
 | Desenvolver plataforma web para integrar scripts | 5 dias | 17 h |
-| testar sistema no windows| 1 dia | 8 h |
+| testar sistema no windows| 1 dia | 11 h |
 | Integrar visualisações na View | 1 dia |
 | Refatoração do código (PlantList) | 2 dias | 13 h |
 | Adicionar scrappping Flora do Brasil | 3 dias | 
