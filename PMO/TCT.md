@@ -58,9 +58,8 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
  | Extração de dados das onlines databases(GBIF e Specieslink) | 5 dias | 13 h |
  | Correção de nomes inválidos | 3 dias |
  | Correção de incoerencias | 3 dias |
- | Elaborar testes | 1 dia | 2 h
- | Aplicar testes | 1 dia | 
- | Corrigir cronograma de tarefas | 1 dia |
+ | Elaborar e aplicar testes | 1 dia | 2 h
+ | Corrigir cronograma de tarefas | 1/2 dia | 2 min
  
 
 ### 4. Quarta Entrega
@@ -80,9 +79,9 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 | Elaborar e aplicar testes | 1 dia | 23 h |
 | correção de bugs | 3 dias | 32 h |
 | Desenvolver plataforma web para integrar scripts | 5 dias | 17 h |
-| testar sistema no windows| 1 dia | 11 h |
-| Integrar visualisações na View | 1 dia |
+| testar sistema no windows| 1 dia | 8 h |
+| Integrar visualisações na View | 1 dia | 5 h |
 | Refatoração do código (PlantList) | 2 dias | 13 h |
 | Adicionar scrappping Flora do Brasil | 3 dias | 
 | Elaborar Termo de Finalização de projeto (TEP) | 3 dias | 9 h |
-| Gerar tabelas de esforço | 1 dia | 
+| Gerar tabelas de esforço | 1 dia | 6 h |
