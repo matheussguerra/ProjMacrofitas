@@ -32,9 +32,9 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 | Elaborar testes unitários |
 | Aplicar testes unitários |
 
-|  Tarefas ralmente realizadas | Tempo real executado |
+|  Tarefas ralmente realizadas | Tempo Estimado | Tempo real executado |
 | --- | --- |
-| Pré processamento das bases cedidas |  |
+| Pré processamento das bases cedidas | 1 dia | 3 h |
 | Verificação da lista de nomes de espécies e autores |
 | Estração dos dados das online databases |
 | Estruturação dos dados das online databases |
@@ -48,7 +48,7 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 | tarefas inicialmente planejadas | Tempo estimado | 
 | --- | --- |
 | Busca de Ocorrências de espécies |
-| Extração de dados das online databases (GBIF e Specieslink) | 5 dias
+| Extração de dados das online databases (GBIF e Specieslink) | 5 dias | 
 | Triagem dos dados |
 | Correção de nomes inválidos |
 | Correção de incoerências |
@@ -57,7 +57,7 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 
  | tarefas ralmente realizadas | Tempo Estimado | Tempo real executado |
  | --- | --- | --- |
- | Extração de dados das onlines databases(GBIF e Specieslink) | 5 dias |
+ | Extração de dados das onlines databases(GBIF e Specieslink) | 5 dias | 13 h |
  | Correção de nomes inválidos | 3 dias |
  | Correção de incoerencias | 3 dias |
  | Elaborar testes |
@@ -78,13 +78,13 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 | tarefas ralmente realizadas | Tempo Estimado | Tempo real executado |
 | --- | --- | --- |
 | Gerar gráficos |
-| Gerar mapas de distribuição para determinada planta|
+| Gerar mapas de distribuição para determinada planta| | 7 h
 | Gerar tabelas | 3 dias | 4 h |
 | Elaborar testes | 1 dia | 23 h |
 | Aplicar testes | 1 dia |
-| correção de bugs | 3 dias | 26 h |
+| correção de bugs | 3 dias | 32 h |
 | Desenvolver plataforma web para integrar scripts | 5 dias | 17 h |
-| testar sistema no windows| 1 dia | 8 h |
+| testar sistema no windows| 1 dia | 11 h |
 | Integrar visualisações na View | 1 dia |
 | Refatoração do código (PlantList) | 2 dias | 13 h |
 | Adicionar scrappping Flora do Brasil | 3 dias | 
