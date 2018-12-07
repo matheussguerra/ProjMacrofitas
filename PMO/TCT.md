@@ -39,7 +39,7 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 | Estração dos dados das online databases | 5 dias |
 | Estruturação dos dados das online databases | 3 dias |
 | Verificar/modificar nomes na base com os nomes dos dados estruturados | 3 dias |
-| Elaborar e aplicar testes |
+| Elaborar e aplicar testes | 1 dia |
 
 ### 3. Terceira Entrega
 <div id='id3' />
@@ -51,7 +51,7 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 | Triagem dos dados | 3 dias |
 | Correção de nomes inválidos | 3 dias |
 | Correção de incoerências | 4 dias |
-| Elaborar e aplicar testes |
+| Elaborar e aplicar testes | 1 dia |
 
  | tarefas ralmente realizadas | Tempo Estimado | Tempo real executado |
  | --- | --- | --- |
@@ -82,6 +82,7 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 | testar sistema no windows| 1 dia | 8 h |
 | Integrar visualisações na View | 1 dia | 5 h |
 | Refatoração do código (PlantList) | 2 dias | 13 h |
-| Adicionar scrappping Flora do Brasil | 3 dias | 
+| Adicionar scrappping Flora do Brasil | 3 dias |
+| Criação do executavel | 1 dia | 
 | Elaborar Termo de Finalização de projeto (TEP) | 3 dias | 9 h |
 | Gerar tabelas de esforço | 1 dia | 6 h |
