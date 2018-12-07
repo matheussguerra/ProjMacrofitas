@@ -60,14 +60,9 @@ def importar():
 def mapa(planta):
     locations_gbif = getLocation(planta, '', False)
 
-    print locations_gbif
+    MapGenerator().generate_map_html(locations_gbif)
 
-    map_html = MapGenerator().generate_map_html(locations_gbif)
-
-    #return render_template(map_html._repr_html_())
-
-    print os.getcwd() + '/web/visualizations/map.html'
-    return app.send_static_file(os.getcwd() + '/web/visualizations/map.html')
+    return render_template('visualizations/map.html')
 
 
 def parseStatus(status):
