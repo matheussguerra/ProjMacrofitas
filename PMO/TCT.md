@@ -33,7 +33,7 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 | Aplicar testes unitários |
 
 |  Tarefas ralmente realizadas | Tempo Estimado | Tempo real executado |
-| --- | --- |
+| --- | --- | --- |
 | Pré processamento das bases cedidas | 1 dia | 3 h |
 | Verificação da lista de nomes de espécies e autores |
 | Estração dos dados das online databases |
