@@ -42,7 +42,7 @@ Aceitação total
 
 | Pendência    | Resolução                             | Unidade Responsável |
 |--------------|---------------------------------------|---------------------|
-| Visualisaçes | Saber exatamente o que o cliente quer | Equipe              |
+| Visualisações | Saber exatamente o que o cliente quer | Equipe              |
 
 ### 6. Registros das Lições Aprendidas
 <div id='id6' />
