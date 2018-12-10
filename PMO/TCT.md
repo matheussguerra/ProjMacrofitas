@@ -83,6 +83,6 @@ O objetivo deste documento é fornecer informações sobre o decorrer do projeto
 | Integrar visualisações na View | 1 dia | 5 h |
 | Refatoração do código (PlantList) | 2 dias | 13 h |
 | Adicionar scrappping Flora do Brasil | 3 dias |
-| Criação do executavel | 1 dia | 
+| Criação do executavel | 1 dia | 5 h |
 | Elaborar Termo de Finalização de projeto (TEP) | 3 dias | 9 h |
 | Gerar tabelas de esforço | 1 dia | 6 h |
