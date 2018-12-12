@@ -19,6 +19,12 @@ from BeautifulSoup import BeautifulSoup
 # Obtenção de informações de uma planta específica
 def getData(searchTerm='', allDataset=False, inputFile=os.path.join('data','ListaMacrofitasResult.csv'), outputPath=os.path.join('data','floraDoBrasil.csv'), notFoundPath=os.path.join('data','notFoundFDB.csv')):
 	# URL Modelo para pesquisas de plantas
+	# Apaga os dados existentes
+	open(outputPath,'w').close()
+	open(notFoundPath,'w').close()
+	sinonimousPath = outputPath[:-4] + 'Sinonimos.csv'
+	open(sinonimousPath,'w').close()
+
 	urlRequestTemplate = "http://servicos.jbrj.gov.br/flora/taxon/{}"
 
 	# Caso a flag seja verdadeira, a busca de informações é feita para todas as plantas da base de dados
@@ -78,7 +84,6 @@ def parseAndWriteJSON(json_data, outputPath, isNone=False, writeOutput=True):
 	# Abre o arquivo de saída para registro de informações
 	if writeOutput:
 		sinonimousPath = outputPath[:-4] + 'Sinonimos.csv'
-
 		outputFile = open(outputPath,'a')
 		sinonimousFile = open(sinonimousPath,'a')
 		output = csv.writer(outputFile)
@@ -142,7 +147,9 @@ def getFullInformation(sciName):
 		search_id = response_json['result'][0]['references'].decode('utf-8').split('=FB')[1]
 
 		apiRawdataResponse = requests.get('http://reflora.jbrj.gov.br/reflora/listaBrasil/ConsultaPublicaUC/ResultadoDaConsultaCarregaTaxonGrupo.do?&idDadosListaBrasil={}'.format(search_id))
+
 		apiJsonDataResponse = apiRawdataResponse.json() if apiRawdataResponse.status_code == 200 else None
+
 		return parserFullDataJson(apiJsonDataResponse)
 
 def parserFullDataJson(apiJsonDataResponse):

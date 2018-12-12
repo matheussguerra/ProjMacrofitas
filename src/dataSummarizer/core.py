@@ -105,7 +105,12 @@ def generateFirstTable(inputContent, floraDoBrasilContent, plantListContent, fir
 def generateSecondTable(floraDoBrasilSynonimousContent, secondTableOutputPath):
     writeOutput(secondTableOutputPath, 'w', ['Nome Aceito', 'Sinônimo'])
     for line in floraDoBrasilSynonimousContent:
-        writeOutput(secondTableOutputPath, 'a', line.split(','))
+        lineSplited = line.split(',')
+        print len(lineSplited)
+        if len(lineSplited) == 1:
+            lineSplited.append('Não Consta Sinônimos'.decode('utf-8'))
+
+        writeOutput(secondTableOutputPath, 'a', lineSplited )
 
 def generateThirdTable(gbifContent, speciesLinkContent, fourthTableOutputPath):
     writeOutput(fourthTableOutputPath, 'w', ['Nome aceito', 'Cidade', 'Estado', 'País', 'Latitude', 'Longitude'])

@@ -2,14 +2,53 @@
 {% from 'includes/_formhelpers.html' import render_field %}
 {% block body %}
 
+<style>
+
+
+.loader {
+		border: 16px solid #f3f3f3; /* Light grey */
+		border-top: 16px solid #26a806; /* green */
+		border-radius: 50%;
+		width: 120px;
+		height: 120px;
+		animation: spin 2s linear infinite;
+		position: absolute;
+		left: 50%;
+  		top: 45%;
+	}
+
+	@keyframes spin {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+	}
+
+</style>
+
+
+<div id="loader" class="loader" style="display: none;">
+
+</div>
+
 <div class="container">
 	<form method="POST" action="">
 		<div class="form-group">
 			{{ render_field(form.plant, class_="form-control") }}
 		</div>
 
-        <p><input type="submit" class="btn btn-primary" value="Buscar"></p>
+        <p><input type="submit" class="btn btn-primary" value="Buscar" onclick="callLoadingScreen()"></p>
 
 	</form>
 </div>
+
+
+<script>
+	function callLoadingScreen(){
+		var divLoading = document.getElementById('loader');
+		divLoading.style.display = 'block';
+		var content = document.getElementsByClassName('container')[0];
+		content.style.opacity = 0.1;
+
+	}
+
+</script>
 {% endblock %}

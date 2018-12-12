@@ -2,6 +2,7 @@
 
 {% block body %}
 
+
 <div class="container" style="padding-top: 50px;overflow: scroll;">
 
 
@@ -15,17 +16,127 @@
                 <tbody>
 
                     {% for plant in data %}
-                    <tr>
+                    <tr id="{{loop.index}}" onclick="showData({{loop.index}})">
 
                         {% for field in plant %}
                         <td>{{field}}</td>
                         {%endfor%}
-                    </tr>
-                    {%endfor%}
+
+                      </tr>
+
+                      <tr id="data{{loop.index}}" style="display: none;">
+                        <td>
+                    <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Forma de Vida</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                {% for entry in formaVida[loop.index] %}
+                                <tr>
+                                    <td>{{entry}}</td>
+                                </tr>
+                                {%endfor%}
+
+                            </tbody>
+                        </table>
+                      </td>
+<td>
+                    <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Substrato</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                {% for entry in substrato[loop.index] %}
+                                <tr>
+                                    <td>{{entry}}</td>
+                                </tr>
+                                {%endfor%}
+
+                            </tbody>
+                        </table>
+                      </td>
+<td>
+                    <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Origem</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>{{origem[loop.index]}}</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                      </td>
+                  <td>
+                    <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Endemismo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>{{endemismo[loop.index]}}</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                  </td>
+                  <td>
+                    <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Distribuição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                {% for entry in distribuicao[loop.index] %}
+                                <tr>
+                                    <td>{{entry}}</td>
+                                </tr>
+                                {%endfor%}
+
+                            </tbody>
+                        </table>
+
+                  </td>
+
+                </tr>
+
+
+              {%endfor%}
 
                 </tbody>
               </table>
 
 </div>
+
+<script>
+
+  function showData(index){
+      var div = document.getElementById('data'.concat(index));
+      if (div.style.display == 'none') {
+        div.style.display = 'block';
+      } else {
+        div.style.display = 'none';
+
+      }
+
+  }
+
+</script>
 
 {% endblock %}
