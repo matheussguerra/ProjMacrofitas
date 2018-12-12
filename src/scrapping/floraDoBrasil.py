@@ -13,7 +13,7 @@ import requests
 import json
 import csv
 import os
-from BeautifulSoup import BeautifulSoup
+from bs4 import BeautifulSoup
 
 # Método principal. Obtenção de informações de todas as plantas de um arquivo de entrada
 # Obtenção de informações de uma planta específica
