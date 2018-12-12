@@ -1,7 +1,11 @@
-ECHO OFF
+ECHO ON
 
-path = \Users\Guerra\Downloads\ProjMacrofitas-master\ProjMacrofitas-master\src\PlantSearch.py
-set path=%path:\PlantSearch.py=\%
+cd\
+ 
+(dir /s /b *PlantSearch.py)>temp.txt
+SET /p VAR=<temp.txt
+SET path=%VAR:\PlantSearch.py=\%
+
 cd %path%
 
 ECHO *** Instalando/ Verificando dependencias ***
@@ -10,5 +14,7 @@ ECHO *** Instalando/ Verificando dependencias ***
 
 ECHO *** Subindo o servidor PlantSearch ***
 \Python27\python.exe PlantSearch.py
+
+Pause
 
 
