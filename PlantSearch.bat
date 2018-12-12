@@ -5,12 +5,10 @@ set path=%path:\PlantSearch.py=\%
 cd %path%
 
 ECHO *** Instalando/ Verificando dependencias ***
-\Python27\python.exe -m pip install requirements.txt
+\Python27\python.exe -m pip install -r requirements.txt
 
 
 ECHO *** Subindo o servidor PlantSearch ***
 \Python27\python.exe PlantSearch.py
-
-Pause
 
 
