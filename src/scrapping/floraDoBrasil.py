@@ -4,12 +4,16 @@
 - Script para obtenção de dados de plantas da base Flora do Brasil
 - Formato: {Nome que foi pesquisado},{Status: NOME_ACEITO/SINÔNIMO},{Nome aceito -> caso a planta pesquisada seja sinônimo}
 """
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 
 # Bibliotecas utilizadas
 import requests
 import json
 import csv
 import os
+from BeautifulSoup import BeautifulSoup
 
 # Método principal. Obtenção de informações de todas as plantas de um arquivo de entrada
 # Obtenção de informações de uma planta específica
@@ -123,4 +127,42 @@ def parseAndWriteJSON(json_data, outputPath, isNone=False, writeOutput=True):
 		output.writerow((name, status, accepted_name))
 		if len(sinonimos) >= 1:
 			outputSynonimous.writerow([name] + sinonimos)
+		else:
+			outputSynonimous.writerow([name])
+
 	return name, status, accepted_name, sinonimos
+
+def getFullInformation(sciName):
+	query_url = 'http://servicos.jbrj.gov.br/flora/url/{}'.format(sciName)
+	response = requests.get(query_url)
+
+	if response.status_code == 200:
+		response_json = response.json()
+		# Site está funcionando
+		search_id = response_json['result'][0]['references'].decode('utf-8').split('=FB')[1]
+
+		apiRawdataResponse = requests.get('http://reflora.jbrj.gov.br/reflora/listaBrasil/ConsultaPublicaUC/ResultadoDaConsultaCarregaTaxonGrupo.do?&idDadosListaBrasil={}'.format(search_id))
+		apiJsonDataResponse = apiRawdataResponse.json() if apiRawdataResponse.status_code == 200 else None
+		return parserFullDataJson(apiJsonDataResponse)
+
+def parserFullDataJson(apiJsonDataResponse):
+	if not apiJsonDataResponse:
+		raise 'Planta não encontrada'
+
+	formaVida = [entry.encode('utf-8') for entry in apiJsonDataResponse['formaVida']]
+	formaVida = ['Não Informado'.decode('utf-8')] if len(formaVida) == 0 else formaVida
+
+	substrato = [entry.encode('utf-8') for entry in apiJsonDataResponse['substrato']]
+	substrato = ['Não Informado'.decode('utf-8')] if len(substrato) == 0 else substrato
+
+	origem = apiJsonDataResponse['origem'].encode('utf-8')
+	origem = 'Não Informado'.decode('utf-8') if origem == '' else origem
+
+	endemismo = apiJsonDataResponse['endemismo'].decode('utf-8')
+	endemismo = 'Não Informado'.decode('utf-8') if endemismo == '' else endemismo
+
+	distribuicao = [entry.encode('utf-8') for entry in apiJsonDataResponse['estadosCerteza']]
+	distribuicao = ['Não Informado'.decode('utf-8')] if len(distribuicao) == 0 else distribuicao
+
+	return formaVida, substrato, origem, endemismo, distribuicao
+

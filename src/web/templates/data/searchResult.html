@@ -32,14 +32,18 @@ a:hover {
 
 <div class="container" style="padding-top: 50px;">
     <div class="row">
+        <div class="col-md-6">
             <h1>Resultados da Busca </h1>
+        </div>
+
+        <div class="col-md-6">
+            <a href="{{url_for('mapa', planta=plant_searched)}}">
+                <button class="button" name="export_btn">Exportar dados para visualização »</button>
+            </a>
+        </div>
+
     </div>
-    <div class="row">
         <h2 class="text-muted">{{plant_searched}}</h2>
-        <a href="{{url_for('mapa', planta=plant_searched)}}">
-            <button class="button" name="export_btn">Exportar dados para visualização »</button>
-        </a>
-    </div>
     <div class="row" style="padding-top: 50px">
         <div class="col-md-12">
             <table class="table table-striped">
@@ -92,6 +96,112 @@ a:hover {
         </div>
     </div>
 
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4">
+                        <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Forma de Vida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    {% for entry in formaVida %}
+                                    <tr>
+                                        <td>{{entry}}</td>
+                                    </tr>
+                                    {%endfor%}
+
+                                </tbody>
+                            </table>
+
+                </div>
+
+                <div class="col-md-4">
+                        <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Substrato</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    {% for entry in substrato %}
+                                    <tr>
+                                        <td>{{entry}}</td>
+                                    </tr>
+                                    {%endfor%}
+
+                                </tbody>
+                            </table>
+                </div>
+
+                <div class="col-md-4">
+                        <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Origem</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>{{origem}}</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                        <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Endemismo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>{{endemismo}}</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                </div>
+
+                <div class="col-md-6">
+                        <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Distribuição</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    {% for entry in distribuicao %}
+                                    <tr>
+                                        <td>{{entry}}</td>
+                                    </tr>
+                                    {%endfor%}
+
+                                </tbody>
+                            </table>
+
+                </div>
+            </div>
+
+    </div>
+
+    </div>
 
     <!-- Tabela 3 -->
 

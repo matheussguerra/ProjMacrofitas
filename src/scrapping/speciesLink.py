@@ -43,7 +43,7 @@ def getData(searchTerm, offset=0, inputFile=os.path.join('data','ListaMacrofitas
 
 			for div in divs[1:]:
 				scientificName, municipality, state, country, latitude, longitude, date = parseDiv(div)
-				registries.append('{},{},{},{},{},{},{}'.format(scientificName, municipality, state, country, latitude, longitude, date))
+				registries.append('{},{},{},{},{},{},{}'.format(searchTerm, municipality, state, country, latitude, longitude, date))
 
 			writeOutput(registries)
 
