@@ -31,7 +31,7 @@ def busca():
 
         status_flora, status_plantList = parseStatus(status_flora), parseStatus(status_plantList)
 
-        dataComparation = [nome_flora, status_flora.decode('utf-8'), nome_aceito_flora, status_plantList.decode('utf-8'), nome_plantList, 'Diferente' if status_flora != status_plantList else '']
+        dataComparation = [nome_flora.decode('utf-8'), status_flora.decode('utf-8'), nome_aceito_flora.decode('utf-8'), status_plantList.decode('utf-8'), nome_plantList, 'Diferente' if status_flora != status_plantList else '']
         locations_gbif = getLocation(planta, '', False)
         formaVida, substrato, origem, endemismo, distribuicao = getFullInformation(planta)
 
